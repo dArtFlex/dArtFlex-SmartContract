@@ -1,0 +1,1621 @@
+{
+  "contractName": "Mint1155Validator",
+  "abi": [],
+  "metadata": "{\"compiler\":{\"version\":\"0.7.6+commit.7338295f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/F/Development/protocol-contracts/tokens/contracts/erc-1155/Mint1155Validator.sol\":\"Mint1155Validator\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/F/Development/protocol-contracts/tokens/contracts/erc-1155/Mint1155Validator.sol\":{\"keccak256\":\"0x232be35d248e0d0eeff692e1db8df94f146fdaeacc4dfa070176c259281e8986\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://21c384910d7e187edf136ef6bf767b892909a11a0d1dd862cea45f88de9d4e88\",\"dweb:/ipfs/QmV5r1hxvVzRX7GgqggTrjACcwTXrrx66XBVyKqDvt7vC5\"]},\"/F/Development/protocol-contracts/tokens/contracts/erc-1271/ERC1271.sol\":{\"keccak256\":\"0x79d9010a53000aecc7e829120e5d35b7142f797ec9d9591810c88b3bd4bac39e\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://32610b54c0f077e716af6af6821e186de9ed6b26b1abdebb7f6a0a5a6673fd7a\",\"dweb:/ipfs/QmUfuihZ3h2yQPyzPshgUVq1mnckYy2nYk5BQq3thBgDRp\"]},\"/F/Development/protocol-contracts/tokens/contracts/erc-1271/ERC1271Validator.sol\":{\"keccak256\":\"0x3e1d6a2277ec3ba5001b4028d3272bda91cb1c474fdaabc6cc316088829ef241\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://8f896a1a5c5554c370ae66e4e85af0441b7efc83712959107c845fb4b11212ed\",\"dweb:/ipfs/QmUgJsyRYrbWveDyqYWniuMcs2R8WZjDWkwBZmJtp1MGuS\"]},\"@openzeppelin/contracts-upgradeable/cryptography/ECDSAUpgradeable.sol\":{\"keccak256\":\"0xe348c45df01e0705c50ede5063d77111a996722ffb83f0a22979338a32b06887\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://afd37f4b5b678753c3e4ac2f8b83f921a8fe0adb456600e4408ee8e26ccbb09c\",\"dweb:/ipfs/QmYfP67Yx8nQXFKBrWjhmG2htgbT5LRSymx7gVt4JRZ2j7\"]},\"@openzeppelin/contracts-upgradeable/drafts/EIP712Upgradeable.sol\":{\"keccak256\":\"0x6cd0bc8c149150614ca3d4a3d3d21f844a0ab3032625f34fcfcf1c2c8b351638\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://aee85054062c8bcc9fdbdfbc92a459e04b4b9437b04c98b820d0772c11aa7268\",\"dweb:/ipfs/QmQZLXFFGNh2qni7fJp9maYU1XoaP77sMBVY3MnFb2Cyed\"]},\"@openzeppelin/contracts-upgradeable/proxy/Initializable.sol\":{\"keccak256\":\"0xd8e4eb08dcc1d1860fb347ba5ffd595242b9a1b66d49a47f2b4cb51c3f35017e\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://7dbc89479d30592e82442edc38053b380f611037a5e6ceafc7bf57a7aa1f0305\",\"dweb:/ipfs/QmcdYtt56WmjeYvsFjK69FnahnAriw88VzY3XRZwXkQKKN\"]},\"@openzeppelin/contracts-upgradeable/utils/AddressUpgradeable.sol\":{\"keccak256\":\"0xfc5ea91fa9ceb1961023b2a6c978b902888c52b90847ac7813fe3b79524165f6\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://a6b81dcc816857a9d981386f6d8de49198420ee41cdc0ecade366ab412174d03\",\"dweb:/ipfs/QmV2vznMT6m9qo3pFMAWi3Nz3UDhwesgwFxeXe6Tod3v8A\"]},\"@rarible/lazy-mint/contracts/erc-1155/LibERC1155LazyMint.sol\":{\"keccak256\":\"0x9e878eabebd94add2651ce3a03c0a6e4d65c288893e642882186ca7a9e7d9541\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://39fa8ae2f21c5915861bbfd117c5ca1948405733c801a84f9d16845e35f74198\",\"dweb:/ipfs/QmS33E8T8tJodVkRJBMq8XvN4rN6i5wzDLhj7DCZrXXTnr\"]},\"@rarible/royalties/contracts/LibPart.sol\":{\"keccak256\":\"0xd0123f7411573a6a7e1527e0d3901913d7642e504ff240d5b7c5b76a28587def\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://447b449f7f986ecfdea10cbc96ae276877102866353b4f8410fec0bdb357d5ae\",\"dweb:/ipfs/QmatbYwMc1UXCGGH1D9fvgLbLPNdgzBVafYW84B1nJJiRr\"]}},\"version\":1}",
+  "bytecode": "0x6080604052348015600f57600080fd5b50603f80601d6000396000f3fe6080604052600080fdfea2646970667358221220616de52ad98def6423525c4d79675bf1b6a7cb46d00d29583e763578906e9b6764736f6c63430007060033",
+  "deployedBytecode": "0x6080604052600080fdfea2646970667358221220616de52ad98def6423525c4d79675bf1b6a7cb46d00d29583e763578906e9b6764736f6c63430007060033",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "188:550:9:-:0;;;;;;;;;;;;;;;;;;;",
+  "deployedSourceMap": "188:550:9:-:0;;;;;",
+  "source": "// SPDX-License-Identifier: MIT\r\n\r\npragma solidity >=0.6.2 <0.8.0;\r\n\r\nimport \"../erc-1271/ERC1271Validator.sol\";\r\nimport \"@rarible/lazy-mint/contracts/erc-1155/LibERC1155LazyMint.sol\";\r\n\r\ncontract Mint1155Validator is ERC1271Validator {\r\n    function __Mint1155Validator_init_unchained() internal initializer {\r\n        __EIP712_init_unchained(\"Mint1155\", \"1\");\r\n    }\r\n\r\n    function validate(address sender, LibERC1155LazyMint.Mint1155Data memory data, uint index) internal view {\r\n        address creator = data.creators[index].account;\r\n        if (sender != creator) {\r\n            validate1271(data.creators[index].account, LibERC1155LazyMint.hash(data), data.signatures[index]);\r\n        }\r\n    }\r\n    uint256[50] private __gap;\r\n}\r\n",
+  "sourcePath": "F:\\Development\\protocol-contracts\\tokens\\contracts\\erc-1155\\Mint1155Validator.sol",
+  "ast": {
+    "absolutePath": "/F/Development/protocol-contracts/tokens/contracts/erc-1155/Mint1155Validator.sol",
+    "exportedSymbols": {
+      "AddressUpgradeable": [
+        5641
+      ],
+      "ECDSAUpgradeable": [
+        2196
+      ],
+      "EIP712Upgradeable": [
+        2356
+      ],
+      "ERC1271": [
+        1211
+      ],
+      "ERC1271Validator": [
+        1280
+      ],
+      "Initializable": [
+        2864
+      ],
+      "LibERC1155LazyMint": [
+        7699
+      ],
+      "LibPart": [
+        7932
+      ],
+      "Mint1155Validator": [
+        1176
+      ]
+    },
+    "id": 1177,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1117,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.6",
+          ".2",
+          "<",
+          "0.8",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "35:31:9"
+      },
+      {
+        "absolutePath": "/F/Development/protocol-contracts/tokens/contracts/erc-1271/ERC1271Validator.sol",
+        "file": "../erc-1271/ERC1271Validator.sol",
+        "id": 1118,
+        "nodeType": "ImportDirective",
+        "scope": 1177,
+        "sourceUnit": 1281,
+        "src": "70:42:9",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "@rarible/lazy-mint/contracts/erc-1155/LibERC1155LazyMint.sol",
+        "file": "@rarible/lazy-mint/contracts/erc-1155/LibERC1155LazyMint.sol",
+        "id": 1119,
+        "nodeType": "ImportDirective",
+        "scope": 1177,
+        "sourceUnit": 7700,
+        "src": "114:70:9",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "abstract": false,
+        "baseContracts": [
+          {
+            "baseName": {
+              "id": 1120,
+              "name": "ERC1271Validator",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 1280,
+              "src": "218:16:9",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_ERC1271Validator_$1280",
+                "typeString": "contract ERC1271Validator"
+              }
+            },
+            "id": 1121,
+            "nodeType": "InheritanceSpecifier",
+            "src": "218:16:9"
+          }
+        ],
+        "contractDependencies": [
+          1280,
+          2356,
+          2864
+        ],
+        "contractKind": "contract",
+        "fullyImplemented": true,
+        "id": 1176,
+        "linearizedBaseContracts": [
+          1176,
+          1280,
+          2356,
+          2864
+        ],
+        "name": "Mint1155Validator",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": {
+              "id": 1131,
+              "nodeType": "Block",
+              "src": "309:59:9",
+              "statements": [
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "hexValue": "4d696e7431313535",
+                        "id": 1127,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "344:10:9",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_08167dbffed14bc23a2b328ced59a6370a82faa4bd594543394fcfed96746173",
+                          "typeString": "literal_string \"Mint1155\""
+                        },
+                        "value": "Mint1155"
+                      },
+                      {
+                        "hexValue": "31",
+                        "id": 1128,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "356:3:9",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_c89efdaa54c0f20c7adf612882df0950f5a951637e0307cdcb4c672f298b8bc6",
+                          "typeString": "literal_string \"1\""
+                        },
+                        "value": "1"
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_stringliteral_08167dbffed14bc23a2b328ced59a6370a82faa4bd594543394fcfed96746173",
+                          "typeString": "literal_string \"Mint1155\""
+                        },
+                        {
+                          "typeIdentifier": "t_stringliteral_c89efdaa54c0f20c7adf612882df0950f5a951637e0307cdcb4c672f298b8bc6",
+                          "typeString": "literal_string \"1\""
+                        }
+                      ],
+                      "id": 1126,
+                      "name": "__EIP712_init_unchained",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 2263,
+                      "src": "320:23:9",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_nonpayable$_t_string_memory_ptr_$_t_string_memory_ptr_$returns$__$",
+                        "typeString": "function (string memory,string memory)"
+                      }
+                    },
+                    "id": 1129,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "320:40:9",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 1130,
+                  "nodeType": "ExpressionStatement",
+                  "src": "320:40:9"
+                }
+              ]
+            },
+            "id": 1132,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [
+              {
+                "id": 1124,
+                "modifierName": {
+                  "id": 1123,
+                  "name": "initializer",
+                  "nodeType": "Identifier",
+                  "overloadedDeclarations": [],
+                  "referencedDeclaration": 2847,
+                  "src": "297:11:9",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_modifier$__$",
+                    "typeString": "modifier ()"
+                  }
+                },
+                "nodeType": "ModifierInvocation",
+                "src": "297:11:9"
+              }
+            ],
+            "name": "__Mint1155Validator_init_unchained",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 1122,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "285:2:9"
+            },
+            "returnParameters": {
+              "id": 1125,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "309:0:9"
+            },
+            "scope": 1176,
+            "src": "242:126:9",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "internal"
+          },
+          {
+            "body": {
+              "id": 1170,
+              "nodeType": "Block",
+              "src": "481:222:9",
+              "statements": [
+                {
+                  "assignments": [
+                    1142
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 1142,
+                      "mutability": "mutable",
+                      "name": "creator",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 1170,
+                      "src": "492:15:9",
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      },
+                      "typeName": {
+                        "id": 1141,
+                        "name": "address",
+                        "nodeType": "ElementaryTypeName",
+                        "src": "492:7:9",
+                        "stateMutability": "nonpayable",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      },
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 1148,
+                  "initialValue": {
+                    "expression": {
+                      "baseExpression": {
+                        "expression": {
+                          "id": 1143,
+                          "name": "data",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 1136,
+                          "src": "510:4:9",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_struct$_Mint1155Data_$7577_memory_ptr",
+                            "typeString": "struct LibERC1155LazyMint.Mint1155Data memory"
+                          }
+                        },
+                        "id": 1144,
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "creators",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": 7570,
+                        "src": "510:13:9",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_array$_t_struct$_Part_$7912_memory_ptr_$dyn_memory_ptr",
+                          "typeString": "struct LibPart.Part memory[] memory"
+                        }
+                      },
+                      "id": 1146,
+                      "indexExpression": {
+                        "id": 1145,
+                        "name": "index",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 1138,
+                        "src": "524:5:9",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "nodeType": "IndexAccess",
+                      "src": "510:20:9",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_Part_$7912_memory_ptr",
+                        "typeString": "struct LibPart.Part memory"
+                      }
+                    },
+                    "id": 1147,
+                    "isConstant": false,
+                    "isLValue": true,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "memberName": "account",
+                    "nodeType": "MemberAccess",
+                    "referencedDeclaration": 7909,
+                    "src": "510:28:9",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address_payable",
+                      "typeString": "address payable"
+                    }
+                  },
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "492:46:9"
+                },
+                {
+                  "condition": {
+                    "commonType": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    },
+                    "id": 1151,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftExpression": {
+                      "id": 1149,
+                      "name": "sender",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 1134,
+                      "src": "553:6:9",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "nodeType": "BinaryOperation",
+                    "operator": "!=",
+                    "rightExpression": {
+                      "id": 1150,
+                      "name": "creator",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 1142,
+                      "src": "563:7:9",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "src": "553:17:9",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "id": 1169,
+                  "nodeType": "IfStatement",
+                  "src": "549:147:9",
+                  "trueBody": {
+                    "id": 1168,
+                    "nodeType": "Block",
+                    "src": "572:124:9",
+                    "statements": [
+                      {
+                        "expression": {
+                          "arguments": [
+                            {
+                              "expression": {
+                                "baseExpression": {
+                                  "expression": {
+                                    "id": 1153,
+                                    "name": "data",
+                                    "nodeType": "Identifier",
+                                    "overloadedDeclarations": [],
+                                    "referencedDeclaration": 1136,
+                                    "src": "600:4:9",
+                                    "typeDescriptions": {
+                                      "typeIdentifier": "t_struct$_Mint1155Data_$7577_memory_ptr",
+                                      "typeString": "struct LibERC1155LazyMint.Mint1155Data memory"
+                                    }
+                                  },
+                                  "id": 1154,
+                                  "isConstant": false,
+                                  "isLValue": true,
+                                  "isPure": false,
+                                  "lValueRequested": false,
+                                  "memberName": "creators",
+                                  "nodeType": "MemberAccess",
+                                  "referencedDeclaration": 7570,
+                                  "src": "600:13:9",
+                                  "typeDescriptions": {
+                                    "typeIdentifier": "t_array$_t_struct$_Part_$7912_memory_ptr_$dyn_memory_ptr",
+                                    "typeString": "struct LibPart.Part memory[] memory"
+                                  }
+                                },
+                                "id": 1156,
+                                "indexExpression": {
+                                  "id": 1155,
+                                  "name": "index",
+                                  "nodeType": "Identifier",
+                                  "overloadedDeclarations": [],
+                                  "referencedDeclaration": 1138,
+                                  "src": "614:5:9",
+                                  "typeDescriptions": {
+                                    "typeIdentifier": "t_uint256",
+                                    "typeString": "uint256"
+                                  }
+                                },
+                                "isConstant": false,
+                                "isLValue": true,
+                                "isPure": false,
+                                "lValueRequested": false,
+                                "nodeType": "IndexAccess",
+                                "src": "600:20:9",
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_struct$_Part_$7912_memory_ptr",
+                                  "typeString": "struct LibPart.Part memory"
+                                }
+                              },
+                              "id": 1157,
+                              "isConstant": false,
+                              "isLValue": true,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "memberName": "account",
+                              "nodeType": "MemberAccess",
+                              "referencedDeclaration": 7909,
+                              "src": "600:28:9",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_address_payable",
+                                "typeString": "address payable"
+                              }
+                            },
+                            {
+                              "arguments": [
+                                {
+                                  "id": 1160,
+                                  "name": "data",
+                                  "nodeType": "Identifier",
+                                  "overloadedDeclarations": [],
+                                  "referencedDeclaration": 1136,
+                                  "src": "654:4:9",
+                                  "typeDescriptions": {
+                                    "typeIdentifier": "t_struct$_Mint1155Data_$7577_memory_ptr",
+                                    "typeString": "struct LibERC1155LazyMint.Mint1155Data memory"
+                                  }
+                                }
+                              ],
+                              "expression": {
+                                "argumentTypes": [
+                                  {
+                                    "typeIdentifier": "t_struct$_Mint1155Data_$7577_memory_ptr",
+                                    "typeString": "struct LibERC1155LazyMint.Mint1155Data memory"
+                                  }
+                                ],
+                                "expression": {
+                                  "id": 1158,
+                                  "name": "LibERC1155LazyMint",
+                                  "nodeType": "Identifier",
+                                  "overloadedDeclarations": [],
+                                  "referencedDeclaration": 7699,
+                                  "src": "630:18:9",
+                                  "typeDescriptions": {
+                                    "typeIdentifier": "t_type$_t_contract$_LibERC1155LazyMint_$7699_$",
+                                    "typeString": "type(library LibERC1155LazyMint)"
+                                  }
+                                },
+                                "id": 1159,
+                                "isConstant": false,
+                                "isLValue": false,
+                                "isPure": false,
+                                "lValueRequested": false,
+                                "memberName": "hash",
+                                "nodeType": "MemberAccess",
+                                "referencedDeclaration": 7698,
+                                "src": "630:23:9",
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_function_internal_pure$_t_struct$_Mint1155Data_$7577_memory_ptr_$returns$_t_bytes32_$",
+                                  "typeString": "function (struct LibERC1155LazyMint.Mint1155Data memory) pure returns (bytes32)"
+                                }
+                              },
+                              "id": 1161,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "kind": "functionCall",
+                              "lValueRequested": false,
+                              "names": [],
+                              "nodeType": "FunctionCall",
+                              "src": "630:29:9",
+                              "tryCall": false,
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_bytes32",
+                                "typeString": "bytes32"
+                              }
+                            },
+                            {
+                              "baseExpression": {
+                                "expression": {
+                                  "id": 1162,
+                                  "name": "data",
+                                  "nodeType": "Identifier",
+                                  "overloadedDeclarations": [],
+                                  "referencedDeclaration": 1136,
+                                  "src": "661:4:9",
+                                  "typeDescriptions": {
+                                    "typeIdentifier": "t_struct$_Mint1155Data_$7577_memory_ptr",
+                                    "typeString": "struct LibERC1155LazyMint.Mint1155Data memory"
+                                  }
+                                },
+                                "id": 1163,
+                                "isConstant": false,
+                                "isLValue": true,
+                                "isPure": false,
+                                "lValueRequested": false,
+                                "memberName": "signatures",
+                                "nodeType": "MemberAccess",
+                                "referencedDeclaration": 7576,
+                                "src": "661:15:9",
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_array$_t_bytes_memory_ptr_$dyn_memory_ptr",
+                                  "typeString": "bytes memory[] memory"
+                                }
+                              },
+                              "id": 1165,
+                              "indexExpression": {
+                                "id": 1164,
+                                "name": "index",
+                                "nodeType": "Identifier",
+                                "overloadedDeclarations": [],
+                                "referencedDeclaration": 1138,
+                                "src": "677:5:9",
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_uint256",
+                                  "typeString": "uint256"
+                                }
+                              },
+                              "isConstant": false,
+                              "isLValue": true,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "nodeType": "IndexAccess",
+                              "src": "661:22:9",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_bytes_memory_ptr",
+                                "typeString": "bytes memory"
+                              }
+                            }
+                          ],
+                          "expression": {
+                            "argumentTypes": [
+                              {
+                                "typeIdentifier": "t_address_payable",
+                                "typeString": "address payable"
+                              },
+                              {
+                                "typeIdentifier": "t_bytes32",
+                                "typeString": "bytes32"
+                              },
+                              {
+                                "typeIdentifier": "t_bytes_memory_ptr",
+                                "typeString": "bytes memory"
+                              }
+                            ],
+                            "id": 1152,
+                            "name": "validate1271",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 1275,
+                            "src": "587:12:9",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_function_internal_view$_t_address_$_t_bytes32_$_t_bytes_memory_ptr_$returns$__$",
+                              "typeString": "function (address,bytes32,bytes memory) view"
+                            }
+                          },
+                          "id": 1166,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "kind": "functionCall",
+                          "lValueRequested": false,
+                          "names": [],
+                          "nodeType": "FunctionCall",
+                          "src": "587:97:9",
+                          "tryCall": false,
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_tuple$__$",
+                            "typeString": "tuple()"
+                          }
+                        },
+                        "id": 1167,
+                        "nodeType": "ExpressionStatement",
+                        "src": "587:97:9"
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            "id": 1171,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "validate",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 1139,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1134,
+                  "mutability": "mutable",
+                  "name": "sender",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1171,
+                  "src": "394:14:9",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 1133,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "394:7:9",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 1136,
+                  "mutability": "mutable",
+                  "name": "data",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1171,
+                  "src": "410:43:9",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_Mint1155Data_$7577_memory_ptr",
+                    "typeString": "struct LibERC1155LazyMint.Mint1155Data"
+                  },
+                  "typeName": {
+                    "id": 1135,
+                    "name": "LibERC1155LazyMint.Mint1155Data",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 7577,
+                    "src": "410:31:9",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_Mint1155Data_$7577_storage_ptr",
+                      "typeString": "struct LibERC1155LazyMint.Mint1155Data"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 1138,
+                  "mutability": "mutable",
+                  "name": "index",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1171,
+                  "src": "455:10:9",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 1137,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "455:4:9",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "393:73:9"
+            },
+            "returnParameters": {
+              "id": 1140,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "481:0:9"
+            },
+            "scope": 1176,
+            "src": "376:327:9",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 1175,
+            "mutability": "mutable",
+            "name": "__gap",
+            "nodeType": "VariableDeclaration",
+            "scope": 1176,
+            "src": "709:25:9",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_array$_t_uint256_$50_storage",
+              "typeString": "uint256[50]"
+            },
+            "typeName": {
+              "baseType": {
+                "id": 1172,
+                "name": "uint256",
+                "nodeType": "ElementaryTypeName",
+                "src": "709:7:9",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                }
+              },
+              "id": 1174,
+              "length": {
+                "hexValue": "3530",
+                "id": 1173,
+                "isConstant": false,
+                "isLValue": false,
+                "isPure": true,
+                "kind": "number",
+                "lValueRequested": false,
+                "nodeType": "Literal",
+                "src": "717:2:9",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_rational_50_by_1",
+                  "typeString": "int_const 50"
+                },
+                "value": "50"
+              },
+              "nodeType": "ArrayTypeName",
+              "src": "709:11:9",
+              "typeDescriptions": {
+                "typeIdentifier": "t_array$_t_uint256_$50_storage_ptr",
+                "typeString": "uint256[50]"
+              }
+            },
+            "visibility": "private"
+          }
+        ],
+        "scope": 1177,
+        "src": "188:550:9"
+      }
+    ],
+    "src": "35:705:9"
+  },
+  "legacyAST": {
+    "absolutePath": "/F/Development/protocol-contracts/tokens/contracts/erc-1155/Mint1155Validator.sol",
+    "exportedSymbols": {
+      "AddressUpgradeable": [
+        5641
+      ],
+      "ECDSAUpgradeable": [
+        2196
+      ],
+      "EIP712Upgradeable": [
+        2356
+      ],
+      "ERC1271": [
+        1211
+      ],
+      "ERC1271Validator": [
+        1280
+      ],
+      "Initializable": [
+        2864
+      ],
+      "LibERC1155LazyMint": [
+        7699
+      ],
+      "LibPart": [
+        7932
+      ],
+      "Mint1155Validator": [
+        1176
+      ]
+    },
+    "id": 1177,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1117,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.6",
+          ".2",
+          "<",
+          "0.8",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "35:31:9"
+      },
+      {
+        "absolutePath": "/F/Development/protocol-contracts/tokens/contracts/erc-1271/ERC1271Validator.sol",
+        "file": "../erc-1271/ERC1271Validator.sol",
+        "id": 1118,
+        "nodeType": "ImportDirective",
+        "scope": 1177,
+        "sourceUnit": 1281,
+        "src": "70:42:9",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "@rarible/lazy-mint/contracts/erc-1155/LibERC1155LazyMint.sol",
+        "file": "@rarible/lazy-mint/contracts/erc-1155/LibERC1155LazyMint.sol",
+        "id": 1119,
+        "nodeType": "ImportDirective",
+        "scope": 1177,
+        "sourceUnit": 7700,
+        "src": "114:70:9",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "abstract": false,
+        "baseContracts": [
+          {
+            "baseName": {
+              "id": 1120,
+              "name": "ERC1271Validator",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 1280,
+              "src": "218:16:9",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_ERC1271Validator_$1280",
+                "typeString": "contract ERC1271Validator"
+              }
+            },
+            "id": 1121,
+            "nodeType": "InheritanceSpecifier",
+            "src": "218:16:9"
+          }
+        ],
+        "contractDependencies": [
+          1280,
+          2356,
+          2864
+        ],
+        "contractKind": "contract",
+        "fullyImplemented": true,
+        "id": 1176,
+        "linearizedBaseContracts": [
+          1176,
+          1280,
+          2356,
+          2864
+        ],
+        "name": "Mint1155Validator",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": {
+              "id": 1131,
+              "nodeType": "Block",
+              "src": "309:59:9",
+              "statements": [
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "hexValue": "4d696e7431313535",
+                        "id": 1127,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "344:10:9",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_08167dbffed14bc23a2b328ced59a6370a82faa4bd594543394fcfed96746173",
+                          "typeString": "literal_string \"Mint1155\""
+                        },
+                        "value": "Mint1155"
+                      },
+                      {
+                        "hexValue": "31",
+                        "id": 1128,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "356:3:9",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_c89efdaa54c0f20c7adf612882df0950f5a951637e0307cdcb4c672f298b8bc6",
+                          "typeString": "literal_string \"1\""
+                        },
+                        "value": "1"
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_stringliteral_08167dbffed14bc23a2b328ced59a6370a82faa4bd594543394fcfed96746173",
+                          "typeString": "literal_string \"Mint1155\""
+                        },
+                        {
+                          "typeIdentifier": "t_stringliteral_c89efdaa54c0f20c7adf612882df0950f5a951637e0307cdcb4c672f298b8bc6",
+                          "typeString": "literal_string \"1\""
+                        }
+                      ],
+                      "id": 1126,
+                      "name": "__EIP712_init_unchained",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 2263,
+                      "src": "320:23:9",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_nonpayable$_t_string_memory_ptr_$_t_string_memory_ptr_$returns$__$",
+                        "typeString": "function (string memory,string memory)"
+                      }
+                    },
+                    "id": 1129,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "320:40:9",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 1130,
+                  "nodeType": "ExpressionStatement",
+                  "src": "320:40:9"
+                }
+              ]
+            },
+            "id": 1132,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [
+              {
+                "id": 1124,
+                "modifierName": {
+                  "id": 1123,
+                  "name": "initializer",
+                  "nodeType": "Identifier",
+                  "overloadedDeclarations": [],
+                  "referencedDeclaration": 2847,
+                  "src": "297:11:9",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_modifier$__$",
+                    "typeString": "modifier ()"
+                  }
+                },
+                "nodeType": "ModifierInvocation",
+                "src": "297:11:9"
+              }
+            ],
+            "name": "__Mint1155Validator_init_unchained",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 1122,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "285:2:9"
+            },
+            "returnParameters": {
+              "id": 1125,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "309:0:9"
+            },
+            "scope": 1176,
+            "src": "242:126:9",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "internal"
+          },
+          {
+            "body": {
+              "id": 1170,
+              "nodeType": "Block",
+              "src": "481:222:9",
+              "statements": [
+                {
+                  "assignments": [
+                    1142
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 1142,
+                      "mutability": "mutable",
+                      "name": "creator",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 1170,
+                      "src": "492:15:9",
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      },
+                      "typeName": {
+                        "id": 1141,
+                        "name": "address",
+                        "nodeType": "ElementaryTypeName",
+                        "src": "492:7:9",
+                        "stateMutability": "nonpayable",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      },
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 1148,
+                  "initialValue": {
+                    "expression": {
+                      "baseExpression": {
+                        "expression": {
+                          "id": 1143,
+                          "name": "data",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 1136,
+                          "src": "510:4:9",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_struct$_Mint1155Data_$7577_memory_ptr",
+                            "typeString": "struct LibERC1155LazyMint.Mint1155Data memory"
+                          }
+                        },
+                        "id": 1144,
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "creators",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": 7570,
+                        "src": "510:13:9",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_array$_t_struct$_Part_$7912_memory_ptr_$dyn_memory_ptr",
+                          "typeString": "struct LibPart.Part memory[] memory"
+                        }
+                      },
+                      "id": 1146,
+                      "indexExpression": {
+                        "id": 1145,
+                        "name": "index",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 1138,
+                        "src": "524:5:9",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "nodeType": "IndexAccess",
+                      "src": "510:20:9",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_Part_$7912_memory_ptr",
+                        "typeString": "struct LibPart.Part memory"
+                      }
+                    },
+                    "id": 1147,
+                    "isConstant": false,
+                    "isLValue": true,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "memberName": "account",
+                    "nodeType": "MemberAccess",
+                    "referencedDeclaration": 7909,
+                    "src": "510:28:9",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address_payable",
+                      "typeString": "address payable"
+                    }
+                  },
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "492:46:9"
+                },
+                {
+                  "condition": {
+                    "commonType": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    },
+                    "id": 1151,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftExpression": {
+                      "id": 1149,
+                      "name": "sender",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 1134,
+                      "src": "553:6:9",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "nodeType": "BinaryOperation",
+                    "operator": "!=",
+                    "rightExpression": {
+                      "id": 1150,
+                      "name": "creator",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 1142,
+                      "src": "563:7:9",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "src": "553:17:9",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "id": 1169,
+                  "nodeType": "IfStatement",
+                  "src": "549:147:9",
+                  "trueBody": {
+                    "id": 1168,
+                    "nodeType": "Block",
+                    "src": "572:124:9",
+                    "statements": [
+                      {
+                        "expression": {
+                          "arguments": [
+                            {
+                              "expression": {
+                                "baseExpression": {
+                                  "expression": {
+                                    "id": 1153,
+                                    "name": "data",
+                                    "nodeType": "Identifier",
+                                    "overloadedDeclarations": [],
+                                    "referencedDeclaration": 1136,
+                                    "src": "600:4:9",
+                                    "typeDescriptions": {
+                                      "typeIdentifier": "t_struct$_Mint1155Data_$7577_memory_ptr",
+                                      "typeString": "struct LibERC1155LazyMint.Mint1155Data memory"
+                                    }
+                                  },
+                                  "id": 1154,
+                                  "isConstant": false,
+                                  "isLValue": true,
+                                  "isPure": false,
+                                  "lValueRequested": false,
+                                  "memberName": "creators",
+                                  "nodeType": "MemberAccess",
+                                  "referencedDeclaration": 7570,
+                                  "src": "600:13:9",
+                                  "typeDescriptions": {
+                                    "typeIdentifier": "t_array$_t_struct$_Part_$7912_memory_ptr_$dyn_memory_ptr",
+                                    "typeString": "struct LibPart.Part memory[] memory"
+                                  }
+                                },
+                                "id": 1156,
+                                "indexExpression": {
+                                  "id": 1155,
+                                  "name": "index",
+                                  "nodeType": "Identifier",
+                                  "overloadedDeclarations": [],
+                                  "referencedDeclaration": 1138,
+                                  "src": "614:5:9",
+                                  "typeDescriptions": {
+                                    "typeIdentifier": "t_uint256",
+                                    "typeString": "uint256"
+                                  }
+                                },
+                                "isConstant": false,
+                                "isLValue": true,
+                                "isPure": false,
+                                "lValueRequested": false,
+                                "nodeType": "IndexAccess",
+                                "src": "600:20:9",
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_struct$_Part_$7912_memory_ptr",
+                                  "typeString": "struct LibPart.Part memory"
+                                }
+                              },
+                              "id": 1157,
+                              "isConstant": false,
+                              "isLValue": true,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "memberName": "account",
+                              "nodeType": "MemberAccess",
+                              "referencedDeclaration": 7909,
+                              "src": "600:28:9",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_address_payable",
+                                "typeString": "address payable"
+                              }
+                            },
+                            {
+                              "arguments": [
+                                {
+                                  "id": 1160,
+                                  "name": "data",
+                                  "nodeType": "Identifier",
+                                  "overloadedDeclarations": [],
+                                  "referencedDeclaration": 1136,
+                                  "src": "654:4:9",
+                                  "typeDescriptions": {
+                                    "typeIdentifier": "t_struct$_Mint1155Data_$7577_memory_ptr",
+                                    "typeString": "struct LibERC1155LazyMint.Mint1155Data memory"
+                                  }
+                                }
+                              ],
+                              "expression": {
+                                "argumentTypes": [
+                                  {
+                                    "typeIdentifier": "t_struct$_Mint1155Data_$7577_memory_ptr",
+                                    "typeString": "struct LibERC1155LazyMint.Mint1155Data memory"
+                                  }
+                                ],
+                                "expression": {
+                                  "id": 1158,
+                                  "name": "LibERC1155LazyMint",
+                                  "nodeType": "Identifier",
+                                  "overloadedDeclarations": [],
+                                  "referencedDeclaration": 7699,
+                                  "src": "630:18:9",
+                                  "typeDescriptions": {
+                                    "typeIdentifier": "t_type$_t_contract$_LibERC1155LazyMint_$7699_$",
+                                    "typeString": "type(library LibERC1155LazyMint)"
+                                  }
+                                },
+                                "id": 1159,
+                                "isConstant": false,
+                                "isLValue": false,
+                                "isPure": false,
+                                "lValueRequested": false,
+                                "memberName": "hash",
+                                "nodeType": "MemberAccess",
+                                "referencedDeclaration": 7698,
+                                "src": "630:23:9",
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_function_internal_pure$_t_struct$_Mint1155Data_$7577_memory_ptr_$returns$_t_bytes32_$",
+                                  "typeString": "function (struct LibERC1155LazyMint.Mint1155Data memory) pure returns (bytes32)"
+                                }
+                              },
+                              "id": 1161,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "kind": "functionCall",
+                              "lValueRequested": false,
+                              "names": [],
+                              "nodeType": "FunctionCall",
+                              "src": "630:29:9",
+                              "tryCall": false,
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_bytes32",
+                                "typeString": "bytes32"
+                              }
+                            },
+                            {
+                              "baseExpression": {
+                                "expression": {
+                                  "id": 1162,
+                                  "name": "data",
+                                  "nodeType": "Identifier",
+                                  "overloadedDeclarations": [],
+                                  "referencedDeclaration": 1136,
+                                  "src": "661:4:9",
+                                  "typeDescriptions": {
+                                    "typeIdentifier": "t_struct$_Mint1155Data_$7577_memory_ptr",
+                                    "typeString": "struct LibERC1155LazyMint.Mint1155Data memory"
+                                  }
+                                },
+                                "id": 1163,
+                                "isConstant": false,
+                                "isLValue": true,
+                                "isPure": false,
+                                "lValueRequested": false,
+                                "memberName": "signatures",
+                                "nodeType": "MemberAccess",
+                                "referencedDeclaration": 7576,
+                                "src": "661:15:9",
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_array$_t_bytes_memory_ptr_$dyn_memory_ptr",
+                                  "typeString": "bytes memory[] memory"
+                                }
+                              },
+                              "id": 1165,
+                              "indexExpression": {
+                                "id": 1164,
+                                "name": "index",
+                                "nodeType": "Identifier",
+                                "overloadedDeclarations": [],
+                                "referencedDeclaration": 1138,
+                                "src": "677:5:9",
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_uint256",
+                                  "typeString": "uint256"
+                                }
+                              },
+                              "isConstant": false,
+                              "isLValue": true,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "nodeType": "IndexAccess",
+                              "src": "661:22:9",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_bytes_memory_ptr",
+                                "typeString": "bytes memory"
+                              }
+                            }
+                          ],
+                          "expression": {
+                            "argumentTypes": [
+                              {
+                                "typeIdentifier": "t_address_payable",
+                                "typeString": "address payable"
+                              },
+                              {
+                                "typeIdentifier": "t_bytes32",
+                                "typeString": "bytes32"
+                              },
+                              {
+                                "typeIdentifier": "t_bytes_memory_ptr",
+                                "typeString": "bytes memory"
+                              }
+                            ],
+                            "id": 1152,
+                            "name": "validate1271",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 1275,
+                            "src": "587:12:9",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_function_internal_view$_t_address_$_t_bytes32_$_t_bytes_memory_ptr_$returns$__$",
+                              "typeString": "function (address,bytes32,bytes memory) view"
+                            }
+                          },
+                          "id": 1166,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "kind": "functionCall",
+                          "lValueRequested": false,
+                          "names": [],
+                          "nodeType": "FunctionCall",
+                          "src": "587:97:9",
+                          "tryCall": false,
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_tuple$__$",
+                            "typeString": "tuple()"
+                          }
+                        },
+                        "id": 1167,
+                        "nodeType": "ExpressionStatement",
+                        "src": "587:97:9"
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            "id": 1171,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "validate",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 1139,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1134,
+                  "mutability": "mutable",
+                  "name": "sender",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1171,
+                  "src": "394:14:9",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 1133,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "394:7:9",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 1136,
+                  "mutability": "mutable",
+                  "name": "data",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1171,
+                  "src": "410:43:9",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_Mint1155Data_$7577_memory_ptr",
+                    "typeString": "struct LibERC1155LazyMint.Mint1155Data"
+                  },
+                  "typeName": {
+                    "id": 1135,
+                    "name": "LibERC1155LazyMint.Mint1155Data",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 7577,
+                    "src": "410:31:9",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_Mint1155Data_$7577_storage_ptr",
+                      "typeString": "struct LibERC1155LazyMint.Mint1155Data"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 1138,
+                  "mutability": "mutable",
+                  "name": "index",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1171,
+                  "src": "455:10:9",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 1137,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "455:4:9",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "393:73:9"
+            },
+            "returnParameters": {
+              "id": 1140,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "481:0:9"
+            },
+            "scope": 1176,
+            "src": "376:327:9",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 1175,
+            "mutability": "mutable",
+            "name": "__gap",
+            "nodeType": "VariableDeclaration",
+            "scope": 1176,
+            "src": "709:25:9",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_array$_t_uint256_$50_storage",
+              "typeString": "uint256[50]"
+            },
+            "typeName": {
+              "baseType": {
+                "id": 1172,
+                "name": "uint256",
+                "nodeType": "ElementaryTypeName",
+                "src": "709:7:9",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                }
+              },
+              "id": 1174,
+              "length": {
+                "hexValue": "3530",
+                "id": 1173,
+                "isConstant": false,
+                "isLValue": false,
+                "isPure": true,
+                "kind": "number",
+                "lValueRequested": false,
+                "nodeType": "Literal",
+                "src": "717:2:9",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_rational_50_by_1",
+                  "typeString": "int_const 50"
+                },
+                "value": "50"
+              },
+              "nodeType": "ArrayTypeName",
+              "src": "709:11:9",
+              "typeDescriptions": {
+                "typeIdentifier": "t_array$_t_uint256_$50_storage_ptr",
+                "typeString": "uint256[50]"
+              }
+            },
+            "visibility": "private"
+          }
+        ],
+        "scope": 1177,
+        "src": "188:550:9"
+      }
+    ],
+    "src": "35:705:9"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.7.6+commit.7338295f.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.3.2",
+  "updatedAt": "2021-05-20T06:51:01.281Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}
