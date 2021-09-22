@@ -15,41 +15,41 @@
       "type": "function"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.7.6+commit.7338295f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"V1\",\"outputs\":[{\"internalType\":\"bytes4\",\"name\":\"\",\"type\":\"bytes4\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/F/Development/protocol-contracts/exchange-v2/contracts/LibOrderDataV1.sol\":\"LibOrderDataV1\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/F/Development/protocol-contracts/exchange-v2/contracts/LibOrderDataV1.sol\":{\"keccak256\":\"0x485983f79d71b5481d69671f59be8a08c6b09f164c767dccef7ac283dcd14f3c\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://3227db5cc0c21191f67c6e8d6ba025f43809e84771c93eaf1dbcd65417fe976e\",\"dweb:/ipfs/QmUi5TiuxShNu7ShsR6jvTReKLb8GUvgDDyEGiJ48GWreH\"]},\"@rarible/royalties/contracts/LibPart.sol\":{\"keccak256\":\"0xd0123f7411573a6a7e1527e0d3901913d7642e504ff240d5b7c5b76a28587def\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://447b449f7f986ecfdea10cbc96ae276877102866353b4f8410fec0bdb357d5ae\",\"dweb:/ipfs/QmatbYwMc1UXCGGH1D9fvgLbLPNdgzBVafYW84B1nJJiRr\"]}},\"version\":1}",
-  "bytecode": "0x60c1610025600b82828239805160001a60731461001857fe5b30600052607381538281f3fe730000000000000000000000000000000000000000301460806040526004361060335760003560e01c80633ee569bf146038575b600080fd5b603e6052565b604051604991906076565b60405180910390f35b7f4c23426613a5dc69e08fbd2787e6210aa679d4522e95a89d4dd88c4fd13a228381565b6001600160e01b03199190911681526020019056fea26469706673582212203dfba08fbce9c33662448cbdf0276bc3a6416abc6cab1cb58a2afff0727e621664736f6c63430007060033",
-  "deployedBytecode": "0x730000000000000000000000000000000000000000301460806040526004361060335760003560e01c80633ee569bf146038575b600080fd5b603e6052565b604051604991906076565b60405180910390f35b7f4c23426613a5dc69e08fbd2787e6210aa679d4522e95a89d4dd88c4fd13a228381565b6001600160e01b03199190911681526020019056fea26469706673582212203dfba08fbce9c33662448cbdf0276bc3a6416abc6cab1cb58a2afff0727e621664736f6c63430007060033",
+  "metadata": "{\"compiler\":{\"version\":\"0.7.6+commit.7338295f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"V1\",\"outputs\":[{\"internalType\":\"bytes4\",\"name\":\"\",\"type\":\"bytes4\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/F/Development/ideasoft/dArtFlex/protocol-contracts/exchange-v2/contracts/exchange/v2/LibOrderDataV1.sol\":\"LibOrderDataV1\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/F/Development/ideasoft/dArtFlex/protocol-contracts/exchange-v2/contracts/exchange/v2/LibOrderDataV1.sol\":{\"keccak256\":\"0x85f0bdb4cbcaa0e1881e62af5502c331ef73ec8dd6be665e4eae96e1664848e0\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://e1e107c10610e31f22feac69a66fc3e56b8e68c5ea06c715efd36fc9df08919f\",\"dweb:/ipfs/QmPjNZ5yt9oppRAjg5TAznMZEt8WbvBmhhiKCsgRDDS7Y9\"]},\"@rarible/royalties/contracts/LibPart.sol\":{\"keccak256\":\"0xd0123f7411573a6a7e1527e0d3901913d7642e504ff240d5b7c5b76a28587def\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://447b449f7f986ecfdea10cbc96ae276877102866353b4f8410fec0bdb357d5ae\",\"dweb:/ipfs/QmatbYwMc1UXCGGH1D9fvgLbLPNdgzBVafYW84B1nJJiRr\"]}},\"version\":1}",
+  "bytecode": "0x60c1610025600b82828239805160001a60731461001857fe5b30600052607381538281f3fe730000000000000000000000000000000000000000301460806040526004361060335760003560e01c80633ee569bf146038575b600080fd5b603e6052565b604051604991906076565b60405180910390f35b7f4c23426613a5dc69e08fbd2787e6210aa679d4522e95a89d4dd88c4fd13a228381565b6001600160e01b03199190911681526020019056fea2646970667358221220d7354127c507abe3825b8d1d5a2330a29239ce7221bb1d155c9128265b149b8264736f6c63430007060033",
+  "deployedBytecode": "0x730000000000000000000000000000000000000000301460806040526004361060335760003560e01c80633ee569bf146038575b600080fd5b603e6052565b604051604991906076565b60405180910390f35b7f4c23426613a5dc69e08fbd2787e6210aa679d4522e95a89d4dd88c4fd13a228381565b6001600160e01b03199190911681526020019056fea2646970667358221220d7354127c507abe3825b8d1d5a2330a29239ce7221bb1d155c9128265b149b8264736f6c63430007060033",
   "immutableReferences": {},
   "generatedSources": [],
   "deployedGeneratedSources": [
     {
       "ast": {
         "nodeType": "YulBlock",
-        "src": "0:226:48",
+        "src": "0:226:47",
         "statements": [
           {
             "nodeType": "YulBlock",
-            "src": "6:3:48",
+            "src": "6:3:47",
             "statements": []
           },
           {
             "body": {
               "nodeType": "YulBlock",
-              "src": "121:103:48",
+              "src": "121:103:47",
               "statements": [
                 {
                   "nodeType": "YulAssignment",
-                  "src": "131:26:48",
+                  "src": "131:26:47",
                   "value": {
                     "arguments": [
                       {
                         "name": "headStart",
                         "nodeType": "YulIdentifier",
-                        "src": "143:9:48"
+                        "src": "143:9:47"
                       },
                       {
                         "kind": "number",
                         "nodeType": "YulLiteral",
-                        "src": "154:2:48",
+                        "src": "154:2:47",
                         "type": "",
                         "value": "32"
                       }
@@ -57,16 +57,16 @@
                     "functionName": {
                       "name": "add",
                       "nodeType": "YulIdentifier",
-                      "src": "139:3:48"
+                      "src": "139:3:47"
                     },
                     "nodeType": "YulFunctionCall",
-                    "src": "139:18:48"
+                    "src": "139:18:47"
                   },
                   "variableNames": [
                     {
                       "name": "tail",
                       "nodeType": "YulIdentifier",
-                      "src": "131:4:48"
+                      "src": "131:4:47"
                     }
                   ]
                 },
@@ -76,28 +76,28 @@
                       {
                         "name": "headStart",
                         "nodeType": "YulIdentifier",
-                        "src": "173:9:48"
+                        "src": "173:9:47"
                       },
                       {
                         "arguments": [
                           {
                             "name": "value0",
                             "nodeType": "YulIdentifier",
-                            "src": "188:6:48"
+                            "src": "188:6:47"
                           },
                           {
                             "arguments": [
                               {
                                 "kind": "number",
                                 "nodeType": "YulLiteral",
-                                "src": "200:3:48",
+                                "src": "200:3:47",
                                 "type": "",
                                 "value": "224"
                               },
                               {
                                 "kind": "number",
                                 "nodeType": "YulLiteral",
-                                "src": "205:10:48",
+                                "src": "205:10:47",
                                 "type": "",
                                 "value": "0xffffffff"
                               }
@@ -105,31 +105,31 @@
                             "functionName": {
                               "name": "shl",
                               "nodeType": "YulIdentifier",
-                              "src": "196:3:48"
+                              "src": "196:3:47"
                             },
                             "nodeType": "YulFunctionCall",
-                            "src": "196:20:48"
+                            "src": "196:20:47"
                           }
                         ],
                         "functionName": {
                           "name": "and",
                           "nodeType": "YulIdentifier",
-                          "src": "184:3:48"
+                          "src": "184:3:47"
                         },
                         "nodeType": "YulFunctionCall",
-                        "src": "184:33:48"
+                        "src": "184:33:47"
                       }
                     ],
                     "functionName": {
                       "name": "mstore",
                       "nodeType": "YulIdentifier",
-                      "src": "166:6:48"
+                      "src": "166:6:47"
                     },
                     "nodeType": "YulFunctionCall",
-                    "src": "166:52:48"
+                    "src": "166:52:47"
                   },
                   "nodeType": "YulExpressionStatement",
-                  "src": "166:52:48"
+                  "src": "166:52:47"
                 }
               ]
             },
@@ -139,13 +139,13 @@
               {
                 "name": "headStart",
                 "nodeType": "YulTypedName",
-                "src": "90:9:48",
+                "src": "90:9:47",
                 "type": ""
               },
               {
                 "name": "value0",
                 "nodeType": "YulTypedName",
-                "src": "101:6:48",
+                "src": "101:6:47",
                 "type": ""
               }
             ],
@@ -153,40 +153,40 @@
               {
                 "name": "tail",
                 "nodeType": "YulTypedName",
-                "src": "112:4:48",
+                "src": "112:4:47",
                 "type": ""
               }
             ],
-            "src": "14:210:48"
+            "src": "14:210:47"
           }
         ]
       },
       "contents": "{\n    { }\n    function abi_encode_tuple_t_bytes4__to_t_bytes4__fromStack_library_reversed(headStart, value0) -> tail\n    {\n        tail := add(headStart, 32)\n        mstore(headStart, and(value0, shl(224, 0xffffffff)))\n    }\n}",
-      "id": 48,
+      "id": 47,
       "language": "Yul",
       "name": "#utility.yul"
     }
   ],
-  "sourceMap": "145:343:11:-:0;;;;;;;;;;;;;;;;;;;;;;;;;",
-  "deployedSourceMap": "145:343:11:-:0;;;;;;;;;;;;;;;;;;;;;;;;175:51;;;:::i;:::-;;;;;;;:::i;:::-;;;;;;;;;210:15;175:51;:::o;14:210:48:-;-1:-1:-1;;;;;;184:33:48;;;;166:52;;154:2;139:18;;121:103::o",
-  "source": "// SPDX-License-Identifier: MIT\r\n\r\npragma solidity >=0.6.9 <0.8.0;\r\npragma abicoder v2;\r\n\r\nimport \"@rarible/royalties/contracts/LibPart.sol\";\r\n\r\nlibrary LibOrderDataV1 {\r\n    bytes4 constant public V1 = bytes4(keccak256(\"V1\"));\r\n\r\n    struct DataV1 {\r\n        LibPart.Part[] payouts;\r\n        LibPart.Part[] originFees;\r\n    }\r\n\r\n    function decodeOrderDataV1(bytes memory data) internal pure returns (DataV1 memory orderData) {\r\n        orderData = abi.decode(data, (DataV1));\r\n    }\r\n}\r\n",
-  "sourcePath": "F:\\Development\\protocol-contracts\\exchange-v2\\contracts\\LibOrderDataV1.sol",
+  "sourceMap": "138:333:12:-:0;;;;;;;;;;;;;;;;;;;;;;;;;",
+  "deployedSourceMap": "138:333:12:-:0;;;;;;;;;;;;;;;;;;;;;;;;167:51;;;:::i;:::-;;;;;;;:::i;:::-;;;;;;;;;202:15;167:51;:::o;14:210:47:-;-1:-1:-1;;;;;;184:33:47;;;;166:52;;154:2;139:18;;121:103::o",
+  "source": "// SPDX-License-Identifier: MIT\n\npragma solidity >=0.6.9 <0.8.0;\npragma abicoder v2;\n\nimport \"@rarible/royalties/contracts/LibPart.sol\";\n\nlibrary LibOrderDataV1 {\n    bytes4 constant public V1 = bytes4(keccak256(\"V1\"));\n\n    struct DataV1 {\n        LibPart.Part[] payouts;\n        LibPart.Part[] originFees;\n    }\n\n    function decodeOrderDataV1(bytes memory data) internal pure returns (DataV1 memory orderData) {\n        orderData = abi.decode(data, (DataV1));\n    }\n\n}\n",
+  "sourcePath": "F:\\Development\\ideasoft\\dArtFlex\\protocol-contracts\\exchange-v2\\contracts\\exchange\\v2\\LibOrderDataV1.sol",
   "ast": {
-    "absolutePath": "/F/Development/protocol-contracts/exchange-v2/contracts/LibOrderDataV1.sol",
+    "absolutePath": "/F/Development/ideasoft/dArtFlex/protocol-contracts/exchange-v2/contracts/exchange/v2/LibOrderDataV1.sol",
     "exportedSymbols": {
       "LibOrderDataV1": [
-        1540
+        1592
       ],
       "LibPart": [
-        5465
+        5773
       ]
     },
-    "id": 1541,
+    "id": 1593,
     "license": "MIT",
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 1505,
+        "id": 1557,
         "literals": [
           "solidity",
           ">=",
@@ -197,25 +197,25 @@
           ".0"
         ],
         "nodeType": "PragmaDirective",
-        "src": "35:31:11"
+        "src": "33:31:12"
       },
       {
-        "id": 1506,
+        "id": 1558,
         "literals": [
           "abicoder",
           "v2"
         ],
         "nodeType": "PragmaDirective",
-        "src": "68:19:11"
+        "src": "65:19:12"
       },
       {
         "absolutePath": "@rarible/royalties/contracts/LibPart.sol",
         "file": "@rarible/royalties/contracts/LibPart.sol",
-        "id": 1507,
+        "id": 1559,
         "nodeType": "ImportDirective",
-        "scope": 1541,
-        "sourceUnit": 5466,
-        "src": "91:50:11",
+        "scope": 1593,
+        "sourceUnit": 5774,
+        "src": "86:50:12",
         "symbolAliases": [],
         "unitAlias": ""
       },
@@ -225,9 +225,9 @@
         "contractDependencies": [],
         "contractKind": "library",
         "fullyImplemented": true,
-        "id": 1540,
+        "id": 1592,
         "linearizedBaseContracts": [
-          1540
+          1592
         ],
         "name": "LibOrderDataV1",
         "nodeType": "ContractDefinition",
@@ -235,12 +235,12 @@
           {
             "constant": true,
             "functionSelector": "3ee569bf",
-            "id": 1515,
+            "id": 1567,
             "mutability": "constant",
             "name": "V1",
             "nodeType": "VariableDeclaration",
-            "scope": 1540,
-            "src": "175:51:11",
+            "scope": 1592,
+            "src": "167:51:12",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -248,10 +248,10 @@
               "typeString": "bytes4"
             },
             "typeName": {
-              "id": 1508,
+              "id": 1560,
               "name": "bytes4",
               "nodeType": "ElementaryTypeName",
-              "src": "175:6:11",
+              "src": "167:6:12",
               "typeDescriptions": {
                 "typeIdentifier": "t_bytes4",
                 "typeString": "bytes4"
@@ -263,14 +263,14 @@
                   "arguments": [
                     {
                       "hexValue": "5631",
-                      "id": 1512,
+                      "id": 1564,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
                       "kind": "string",
                       "lValueRequested": false,
                       "nodeType": "Literal",
-                      "src": "220:4:11",
+                      "src": "212:4:12",
                       "typeDescriptions": {
                         "typeIdentifier": "t_stringliteral_4c23426613a5dc69e08fbd2787e6210aa679d4522e95a89d4dd88c4fd13a2283",
                         "typeString": "literal_string \"V1\""
@@ -285,18 +285,18 @@
                         "typeString": "literal_string \"V1\""
                       }
                     ],
-                    "id": 1511,
+                    "id": 1563,
                     "name": "keccak256",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
                     "referencedDeclaration": 4294967288,
-                    "src": "210:9:11",
+                    "src": "202:9:12",
                     "typeDescriptions": {
                       "typeIdentifier": "t_function_keccak256_pure$_t_bytes_memory_ptr_$returns$_t_bytes32_$",
                       "typeString": "function (bytes memory) pure returns (bytes32)"
                     }
                   },
-                  "id": 1513,
+                  "id": 1565,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -304,7 +304,7 @@
                   "lValueRequested": false,
                   "names": [],
                   "nodeType": "FunctionCall",
-                  "src": "210:15:11",
+                  "src": "202:15:12",
                   "tryCall": false,
                   "typeDescriptions": {
                     "typeIdentifier": "t_bytes32",
@@ -319,26 +319,26 @@
                     "typeString": "bytes32"
                   }
                 ],
-                "id": 1510,
+                "id": 1562,
                 "isConstant": false,
                 "isLValue": false,
                 "isPure": true,
                 "lValueRequested": false,
                 "nodeType": "ElementaryTypeNameExpression",
-                "src": "203:6:11",
+                "src": "195:6:12",
                 "typeDescriptions": {
                   "typeIdentifier": "t_type$_t_bytes4_$",
                   "typeString": "type(bytes4)"
                 },
                 "typeName": {
-                  "id": 1509,
+                  "id": 1561,
                   "name": "bytes4",
                   "nodeType": "ElementaryTypeName",
-                  "src": "203:6:11",
+                  "src": "195:6:12",
                   "typeDescriptions": {}
                 }
               },
-              "id": 1514,
+              "id": 1566,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
@@ -346,7 +346,7 @@
               "lValueRequested": false,
               "names": [],
               "nodeType": "FunctionCall",
-              "src": "203:23:11",
+              "src": "195:23:12",
               "tryCall": false,
               "typeDescriptions": {
                 "typeIdentifier": "t_bytes4",
@@ -357,39 +357,39 @@
           },
           {
             "canonicalName": "LibOrderDataV1.DataV1",
-            "id": 1522,
+            "id": 1574,
             "members": [
               {
                 "constant": false,
-                "id": 1518,
+                "id": 1570,
                 "mutability": "mutable",
                 "name": "payouts",
                 "nodeType": "VariableDeclaration",
-                "scope": 1522,
-                "src": "260:22:11",
+                "scope": 1574,
+                "src": "249:22:12",
                 "stateVariable": false,
                 "storageLocation": "default",
                 "typeDescriptions": {
-                  "typeIdentifier": "t_array$_t_struct$_Part_$5445_storage_$dyn_storage_ptr",
+                  "typeIdentifier": "t_array$_t_struct$_Part_$5753_storage_$dyn_storage_ptr",
                   "typeString": "struct LibPart.Part[]"
                 },
                 "typeName": {
                   "baseType": {
-                    "id": 1516,
+                    "id": 1568,
                     "name": "LibPart.Part",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 5445,
-                    "src": "260:12:11",
+                    "referencedDeclaration": 5753,
+                    "src": "249:12:12",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_Part_$5445_storage_ptr",
+                      "typeIdentifier": "t_struct$_Part_$5753_storage_ptr",
                       "typeString": "struct LibPart.Part"
                     }
                   },
-                  "id": 1517,
+                  "id": 1569,
                   "nodeType": "ArrayTypeName",
-                  "src": "260:14:11",
+                  "src": "249:14:12",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_array$_t_struct$_Part_$5445_storage_$dyn_storage_ptr",
+                    "typeIdentifier": "t_array$_t_struct$_Part_$5753_storage_$dyn_storage_ptr",
                     "typeString": "struct LibPart.Part[]"
                   }
                 },
@@ -397,35 +397,35 @@
               },
               {
                 "constant": false,
-                "id": 1521,
+                "id": 1573,
                 "mutability": "mutable",
                 "name": "originFees",
                 "nodeType": "VariableDeclaration",
-                "scope": 1522,
-                "src": "293:25:11",
+                "scope": 1574,
+                "src": "281:25:12",
                 "stateVariable": false,
                 "storageLocation": "default",
                 "typeDescriptions": {
-                  "typeIdentifier": "t_array$_t_struct$_Part_$5445_storage_$dyn_storage_ptr",
+                  "typeIdentifier": "t_array$_t_struct$_Part_$5753_storage_$dyn_storage_ptr",
                   "typeString": "struct LibPart.Part[]"
                 },
                 "typeName": {
                   "baseType": {
-                    "id": 1519,
+                    "id": 1571,
                     "name": "LibPart.Part",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 5445,
-                    "src": "293:12:11",
+                    "referencedDeclaration": 5753,
+                    "src": "281:12:12",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_Part_$5445_storage_ptr",
+                      "typeIdentifier": "t_struct$_Part_$5753_storage_ptr",
                       "typeString": "struct LibPart.Part"
                     }
                   },
-                  "id": 1520,
+                  "id": 1572,
                   "nodeType": "ArrayTypeName",
-                  "src": "293:14:11",
+                  "src": "281:14:12",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_array$_t_struct$_Part_$5445_storage_$dyn_storage_ptr",
+                    "typeIdentifier": "t_array$_t_struct$_Part_$5753_storage_$dyn_storage_ptr",
                     "typeString": "struct LibPart.Part[]"
                   }
                 },
@@ -434,32 +434,32 @@
             ],
             "name": "DataV1",
             "nodeType": "StructDefinition",
-            "scope": 1540,
-            "src": "235:91:11",
+            "scope": 1592,
+            "src": "225:88:12",
             "visibility": "public"
           },
           {
             "body": {
-              "id": 1538,
+              "id": 1590,
               "nodeType": "Block",
-              "src": "428:57:11",
+              "src": "413:55:12",
               "statements": [
                 {
                   "expression": {
-                    "id": 1536,
+                    "id": 1588,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
-                      "id": 1529,
+                      "id": 1581,
                       "name": "orderData",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 1527,
-                      "src": "439:9:11",
+                      "referencedDeclaration": 1579,
+                      "src": "423:9:12",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_DataV1_$1522_memory_ptr",
+                        "typeIdentifier": "t_struct$_DataV1_$1574_memory_ptr",
                         "typeString": "struct LibOrderDataV1.DataV1 memory"
                       }
                     },
@@ -468,12 +468,12 @@
                     "rightHandSide": {
                       "arguments": [
                         {
-                          "id": 1532,
+                          "id": 1584,
                           "name": "data",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 1524,
-                          "src": "462:4:11",
+                          "referencedDeclaration": 1576,
+                          "src": "446:4:12",
                           "typeDescriptions": {
                             "typeIdentifier": "t_bytes_memory_ptr",
                             "typeString": "bytes memory"
@@ -482,28 +482,28 @@
                         {
                           "components": [
                             {
-                              "id": 1533,
+                              "id": 1585,
                               "name": "DataV1",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 1522,
-                              "src": "469:6:11",
+                              "referencedDeclaration": 1574,
+                              "src": "453:6:12",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_type$_t_struct$_DataV1_$1522_storage_ptr_$",
+                                "typeIdentifier": "t_type$_t_struct$_DataV1_$1574_storage_ptr_$",
                                 "typeString": "type(struct LibOrderDataV1.DataV1 storage pointer)"
                               }
                             }
                           ],
-                          "id": 1534,
+                          "id": 1586,
                           "isConstant": false,
                           "isInlineArray": false,
                           "isLValue": false,
                           "isPure": true,
                           "lValueRequested": false,
                           "nodeType": "TupleExpression",
-                          "src": "468:8:11",
+                          "src": "452:8:12",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_type$_t_struct$_DataV1_$1522_storage_ptr_$",
+                            "typeIdentifier": "t_type$_t_struct$_DataV1_$1574_storage_ptr_$",
                             "typeString": "type(struct LibOrderDataV1.DataV1 storage pointer)"
                           }
                         }
@@ -515,36 +515,36 @@
                             "typeString": "bytes memory"
                           },
                           {
-                            "typeIdentifier": "t_type$_t_struct$_DataV1_$1522_storage_ptr_$",
+                            "typeIdentifier": "t_type$_t_struct$_DataV1_$1574_storage_ptr_$",
                             "typeString": "type(struct LibOrderDataV1.DataV1 storage pointer)"
                           }
                         ],
                         "expression": {
-                          "id": 1530,
+                          "id": 1582,
                           "name": "abi",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
                           "referencedDeclaration": 4294967295,
-                          "src": "451:3:11",
+                          "src": "435:3:12",
                           "typeDescriptions": {
                             "typeIdentifier": "t_magic_abi",
                             "typeString": "abi"
                           }
                         },
-                        "id": 1531,
+                        "id": 1583,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
                         "lValueRequested": false,
                         "memberName": "decode",
                         "nodeType": "MemberAccess",
-                        "src": "451:10:11",
+                        "src": "435:10:12",
                         "typeDescriptions": {
                           "typeIdentifier": "t_function_abidecode_pure$__$returns$__$",
                           "typeString": "function () pure"
                         }
                       },
-                      "id": 1535,
+                      "id": 1587,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -552,43 +552,43 @@
                       "lValueRequested": false,
                       "names": [],
                       "nodeType": "FunctionCall",
-                      "src": "451:26:11",
+                      "src": "435:26:12",
                       "tryCall": false,
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_DataV1_$1522_memory_ptr",
+                        "typeIdentifier": "t_struct$_DataV1_$1574_memory_ptr",
                         "typeString": "struct LibOrderDataV1.DataV1 memory"
                       }
                     },
-                    "src": "439:38:11",
+                    "src": "423:38:12",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_DataV1_$1522_memory_ptr",
+                      "typeIdentifier": "t_struct$_DataV1_$1574_memory_ptr",
                       "typeString": "struct LibOrderDataV1.DataV1 memory"
                     }
                   },
-                  "id": 1537,
+                  "id": 1589,
                   "nodeType": "ExpressionStatement",
-                  "src": "439:38:11"
+                  "src": "423:38:12"
                 }
               ]
             },
-            "id": 1539,
+            "id": 1591,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "decodeOrderDataV1",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1525,
+              "id": 1577,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1524,
+                  "id": 1576,
                   "mutability": "mutable",
                   "name": "data",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1539,
-                  "src": "361:17:11",
+                  "scope": 1591,
+                  "src": "346:17:12",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
@@ -596,10 +596,10 @@
                     "typeString": "bytes"
                   },
                   "typeName": {
-                    "id": 1523,
+                    "id": 1575,
                     "name": "bytes",
                     "nodeType": "ElementaryTypeName",
-                    "src": "361:5:11",
+                    "src": "346:5:12",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes_storage_ptr",
                       "typeString": "bytes"
@@ -608,548 +608,590 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "360:19:11"
+              "src": "345:19:12"
             },
             "returnParameters": {
-              "id": 1528,
+              "id": 1580,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1527,
+                  "id": 1579,
                   "mutability": "mutable",
                   "name": "orderData",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1539,
-                  "src": "403:23:11",
+                  "scope": 1591,
+                  "src": "388:23:12",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_struct$_DataV1_$1522_memory_ptr",
+                    "typeIdentifier": "t_struct$_DataV1_$1574_memory_ptr",
                     "typeString": "struct LibOrderDataV1.DataV1"
                   },
                   "typeName": {
-                    "id": 1526,
+                    "id": 1578,
                     "name": "DataV1",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 1522,
-                    "src": "403:6:11",
+                    "referencedDeclaration": 1574,
+                    "src": "388:6:12",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_DataV1_$1522_storage_ptr",
+                      "typeIdentifier": "t_struct$_DataV1_$1574_storage_ptr",
                       "typeString": "struct LibOrderDataV1.DataV1"
                     }
                   },
                   "visibility": "internal"
                 }
               ],
-              "src": "402:25:11"
+              "src": "387:25:12"
             },
-            "scope": 1540,
-            "src": "334:151:11",
+            "scope": 1592,
+            "src": "319:149:12",
             "stateMutability": "pure",
             "virtual": false,
             "visibility": "internal"
           }
         ],
-        "scope": 1541,
-        "src": "145:343:11"
+        "scope": 1593,
+        "src": "138:333:12"
       }
     ],
-    "src": "35:455:11"
+    "src": "33:439:12"
   },
   "legacyAST": {
-    "absolutePath": "/F/Development/protocol-contracts/exchange-v2/contracts/LibOrderDataV1.sol",
-    "exportedSymbols": {
-      "LibOrderDataV1": [
-        1540
-      ],
-      "LibPart": [
-        5465
-      ]
+    "attributes": {
+      "absolutePath": "/F/Development/ideasoft/dArtFlex/protocol-contracts/exchange-v2/contracts/exchange/v2/LibOrderDataV1.sol",
+      "exportedSymbols": {
+        "LibOrderDataV1": [
+          1592
+        ],
+        "LibPart": [
+          5773
+        ]
+      },
+      "license": "MIT"
     },
-    "id": 1541,
-    "license": "MIT",
-    "nodeType": "SourceUnit",
-    "nodes": [
+    "children": [
       {
-        "id": 1505,
-        "literals": [
-          "solidity",
-          ">=",
-          "0.6",
-          ".9",
-          "<",
-          "0.8",
-          ".0"
-        ],
-        "nodeType": "PragmaDirective",
-        "src": "35:31:11"
+        "attributes": {
+          "literals": [
+            "solidity",
+            ">=",
+            "0.6",
+            ".9",
+            "<",
+            "0.8",
+            ".0"
+          ]
+        },
+        "id": 1557,
+        "name": "PragmaDirective",
+        "src": "33:31:12"
       },
       {
-        "id": 1506,
-        "literals": [
-          "abicoder",
-          "v2"
-        ],
-        "nodeType": "PragmaDirective",
-        "src": "68:19:11"
+        "attributes": {
+          "literals": [
+            "abicoder",
+            "v2"
+          ]
+        },
+        "id": 1558,
+        "name": "PragmaDirective",
+        "src": "65:19:12"
       },
       {
-        "absolutePath": "@rarible/royalties/contracts/LibPart.sol",
-        "file": "@rarible/royalties/contracts/LibPart.sol",
-        "id": 1507,
-        "nodeType": "ImportDirective",
-        "scope": 1541,
-        "sourceUnit": 5466,
-        "src": "91:50:11",
-        "symbolAliases": [],
-        "unitAlias": ""
+        "attributes": {
+          "SourceUnit": 5774,
+          "absolutePath": "@rarible/royalties/contracts/LibPart.sol",
+          "file": "@rarible/royalties/contracts/LibPart.sol",
+          "scope": 1593,
+          "symbolAliases": [
+            null
+          ],
+          "unitAlias": ""
+        },
+        "id": 1559,
+        "name": "ImportDirective",
+        "src": "86:50:12"
       },
       {
-        "abstract": false,
-        "baseContracts": [],
-        "contractDependencies": [],
-        "contractKind": "library",
-        "fullyImplemented": true,
-        "id": 1540,
-        "linearizedBaseContracts": [
-          1540
-        ],
-        "name": "LibOrderDataV1",
-        "nodeType": "ContractDefinition",
-        "nodes": [
+        "attributes": {
+          "abstract": false,
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "library",
+          "fullyImplemented": true,
+          "linearizedBaseContracts": [
+            1592
+          ],
+          "name": "LibOrderDataV1",
+          "scope": 1593
+        },
+        "children": [
           {
-            "constant": true,
-            "functionSelector": "3ee569bf",
-            "id": 1515,
-            "mutability": "constant",
-            "name": "V1",
-            "nodeType": "VariableDeclaration",
-            "scope": 1540,
-            "src": "175:51:11",
-            "stateVariable": true,
-            "storageLocation": "default",
-            "typeDescriptions": {
-              "typeIdentifier": "t_bytes4",
-              "typeString": "bytes4"
+            "attributes": {
+              "constant": true,
+              "functionSelector": "3ee569bf",
+              "mutability": "constant",
+              "name": "V1",
+              "scope": 1592,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "bytes4",
+              "visibility": "public"
             },
-            "typeName": {
-              "id": 1508,
-              "name": "bytes4",
-              "nodeType": "ElementaryTypeName",
-              "src": "175:6:11",
-              "typeDescriptions": {
-                "typeIdentifier": "t_bytes4",
-                "typeString": "bytes4"
-              }
-            },
-            "value": {
-              "arguments": [
-                {
-                  "arguments": [
-                    {
-                      "hexValue": "5631",
-                      "id": 1512,
-                      "isConstant": false,
-                      "isLValue": false,
-                      "isPure": true,
-                      "kind": "string",
-                      "lValueRequested": false,
-                      "nodeType": "Literal",
-                      "src": "220:4:11",
-                      "typeDescriptions": {
-                        "typeIdentifier": "t_stringliteral_4c23426613a5dc69e08fbd2787e6210aa679d4522e95a89d4dd88c4fd13a2283",
-                        "typeString": "literal_string \"V1\""
-                      },
-                      "value": "V1"
-                    }
-                  ],
-                  "expression": {
-                    "argumentTypes": [
-                      {
-                        "typeIdentifier": "t_stringliteral_4c23426613a5dc69e08fbd2787e6210aa679d4522e95a89d4dd88c4fd13a2283",
-                        "typeString": "literal_string \"V1\""
-                      }
-                    ],
-                    "id": 1511,
-                    "name": "keccak256",
-                    "nodeType": "Identifier",
-                    "overloadedDeclarations": [],
-                    "referencedDeclaration": 4294967288,
-                    "src": "210:9:11",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_function_keccak256_pure$_t_bytes_memory_ptr_$returns$_t_bytes32_$",
-                      "typeString": "function (bytes memory) pure returns (bytes32)"
-                    }
-                  },
-                  "id": 1513,
+            "children": [
+              {
+                "attributes": {
+                  "name": "bytes4",
+                  "type": "bytes4"
+                },
+                "id": 1560,
+                "name": "ElementaryTypeName",
+                "src": "167:6:12"
+              },
+              {
+                "attributes": {
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
-                  "kind": "functionCall",
+                  "isStructConstructorCall": false,
                   "lValueRequested": false,
-                  "names": [],
-                  "nodeType": "FunctionCall",
-                  "src": "210:15:11",
+                  "names": [
+                    null
+                  ],
                   "tryCall": false,
-                  "typeDescriptions": {
-                    "typeIdentifier": "t_bytes32",
-                    "typeString": "bytes32"
-                  }
-                }
-              ],
-              "expression": {
-                "argumentTypes": [
+                  "type": "bytes4",
+                  "type_conversion": true
+                },
+                "children": [
                   {
-                    "typeIdentifier": "t_bytes32",
-                    "typeString": "bytes32"
-                  }
-                ],
-                "id": 1510,
-                "isConstant": false,
-                "isLValue": false,
-                "isPure": true,
-                "lValueRequested": false,
-                "nodeType": "ElementaryTypeNameExpression",
-                "src": "203:6:11",
-                "typeDescriptions": {
-                  "typeIdentifier": "t_type$_t_bytes4_$",
-                  "typeString": "type(bytes4)"
-                },
-                "typeName": {
-                  "id": 1509,
-                  "name": "bytes4",
-                  "nodeType": "ElementaryTypeName",
-                  "src": "203:6:11",
-                  "typeDescriptions": {}
-                }
-              },
-              "id": 1514,
-              "isConstant": false,
-              "isLValue": false,
-              "isPure": true,
-              "kind": "typeConversion",
-              "lValueRequested": false,
-              "names": [],
-              "nodeType": "FunctionCall",
-              "src": "203:23:11",
-              "tryCall": false,
-              "typeDescriptions": {
-                "typeIdentifier": "t_bytes4",
-                "typeString": "bytes4"
-              }
-            },
-            "visibility": "public"
-          },
-          {
-            "canonicalName": "LibOrderDataV1.DataV1",
-            "id": 1522,
-            "members": [
-              {
-                "constant": false,
-                "id": 1518,
-                "mutability": "mutable",
-                "name": "payouts",
-                "nodeType": "VariableDeclaration",
-                "scope": 1522,
-                "src": "260:22:11",
-                "stateVariable": false,
-                "storageLocation": "default",
-                "typeDescriptions": {
-                  "typeIdentifier": "t_array$_t_struct$_Part_$5445_storage_$dyn_storage_ptr",
-                  "typeString": "struct LibPart.Part[]"
-                },
-                "typeName": {
-                  "baseType": {
-                    "id": 1516,
-                    "name": "LibPart.Part",
-                    "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 5445,
-                    "src": "260:12:11",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_Part_$5445_storage_ptr",
-                      "typeString": "struct LibPart.Part"
-                    }
-                  },
-                  "id": 1517,
-                  "nodeType": "ArrayTypeName",
-                  "src": "260:14:11",
-                  "typeDescriptions": {
-                    "typeIdentifier": "t_array$_t_struct$_Part_$5445_storage_$dyn_storage_ptr",
-                    "typeString": "struct LibPart.Part[]"
-                  }
-                },
-                "visibility": "internal"
-              },
-              {
-                "constant": false,
-                "id": 1521,
-                "mutability": "mutable",
-                "name": "originFees",
-                "nodeType": "VariableDeclaration",
-                "scope": 1522,
-                "src": "293:25:11",
-                "stateVariable": false,
-                "storageLocation": "default",
-                "typeDescriptions": {
-                  "typeIdentifier": "t_array$_t_struct$_Part_$5445_storage_$dyn_storage_ptr",
-                  "typeString": "struct LibPart.Part[]"
-                },
-                "typeName": {
-                  "baseType": {
-                    "id": 1519,
-                    "name": "LibPart.Part",
-                    "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 5445,
-                    "src": "293:12:11",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_Part_$5445_storage_ptr",
-                      "typeString": "struct LibPart.Part"
-                    }
-                  },
-                  "id": 1520,
-                  "nodeType": "ArrayTypeName",
-                  "src": "293:14:11",
-                  "typeDescriptions": {
-                    "typeIdentifier": "t_array$_t_struct$_Part_$5445_storage_$dyn_storage_ptr",
-                    "typeString": "struct LibPart.Part[]"
-                  }
-                },
-                "visibility": "internal"
-              }
-            ],
-            "name": "DataV1",
-            "nodeType": "StructDefinition",
-            "scope": 1540,
-            "src": "235:91:11",
-            "visibility": "public"
-          },
-          {
-            "body": {
-              "id": 1538,
-              "nodeType": "Block",
-              "src": "428:57:11",
-              "statements": [
-                {
-                  "expression": {
-                    "id": 1536,
-                    "isConstant": false,
-                    "isLValue": false,
-                    "isPure": false,
-                    "lValueRequested": false,
-                    "leftHandSide": {
-                      "id": 1529,
-                      "name": "orderData",
-                      "nodeType": "Identifier",
-                      "overloadedDeclarations": [],
-                      "referencedDeclaration": 1527,
-                      "src": "439:9:11",
-                      "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_DataV1_$1522_memory_ptr",
-                        "typeString": "struct LibOrderDataV1.DataV1 memory"
-                      }
+                    "attributes": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_bytes32",
+                          "typeString": "bytes32"
+                        }
+                      ],
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "lValueRequested": false,
+                      "type": "type(bytes4)"
                     },
-                    "nodeType": "Assignment",
-                    "operator": "=",
-                    "rightHandSide": {
-                      "arguments": [
-                        {
-                          "id": 1532,
-                          "name": "data",
-                          "nodeType": "Identifier",
-                          "overloadedDeclarations": [],
-                          "referencedDeclaration": 1524,
-                          "src": "462:4:11",
-                          "typeDescriptions": {
-                            "typeIdentifier": "t_bytes_memory_ptr",
-                            "typeString": "bytes memory"
-                          }
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "bytes4"
                         },
-                        {
-                          "components": [
+                        "id": 1561,
+                        "name": "ElementaryTypeName",
+                        "src": "195:6:12"
+                      }
+                    ],
+                    "id": 1562,
+                    "name": "ElementaryTypeNameExpression",
+                    "src": "195:6:12"
+                  },
+                  {
+                    "attributes": {
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "isStructConstructorCall": false,
+                      "lValueRequested": false,
+                      "names": [
+                        null
+                      ],
+                      "tryCall": false,
+                      "type": "bytes32",
+                      "type_conversion": false
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": [
                             {
-                              "id": 1533,
-                              "name": "DataV1",
-                              "nodeType": "Identifier",
-                              "overloadedDeclarations": [],
-                              "referencedDeclaration": 1522,
-                              "src": "469:6:11",
-                              "typeDescriptions": {
-                                "typeIdentifier": "t_type$_t_struct$_DataV1_$1522_storage_ptr_$",
-                                "typeString": "type(struct LibOrderDataV1.DataV1 storage pointer)"
-                              }
+                              "typeIdentifier": "t_stringliteral_4c23426613a5dc69e08fbd2787e6210aa679d4522e95a89d4dd88c4fd13a2283",
+                              "typeString": "literal_string \"V1\""
                             }
                           ],
-                          "id": 1534,
+                          "overloadedDeclarations": [
+                            null
+                          ],
+                          "referencedDeclaration": 4294967288,
+                          "type": "function (bytes memory) pure returns (bytes32)",
+                          "value": "keccak256"
+                        },
+                        "id": 1563,
+                        "name": "Identifier",
+                        "src": "202:9:12"
+                      },
+                      {
+                        "attributes": {
+                          "hexvalue": "5631",
                           "isConstant": false,
-                          "isInlineArray": false,
                           "isLValue": false,
                           "isPure": true,
                           "lValueRequested": false,
-                          "nodeType": "TupleExpression",
-                          "src": "468:8:11",
-                          "typeDescriptions": {
-                            "typeIdentifier": "t_type$_t_struct$_DataV1_$1522_storage_ptr_$",
-                            "typeString": "type(struct LibOrderDataV1.DataV1 storage pointer)"
-                          }
-                        }
-                      ],
-                      "expression": {
-                        "argumentTypes": [
+                          "token": "string",
+                          "type": "literal_string \"V1\"",
+                          "value": "V1"
+                        },
+                        "id": 1564,
+                        "name": "Literal",
+                        "src": "212:4:12"
+                      }
+                    ],
+                    "id": 1565,
+                    "name": "FunctionCall",
+                    "src": "202:15:12"
+                  }
+                ],
+                "id": 1566,
+                "name": "FunctionCall",
+                "src": "195:23:12"
+              }
+            ],
+            "id": 1567,
+            "name": "VariableDeclaration",
+            "src": "167:51:12"
+          },
+          {
+            "attributes": {
+              "canonicalName": "LibOrderDataV1.DataV1",
+              "name": "DataV1",
+              "scope": 1592,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "constant": false,
+                  "mutability": "mutable",
+                  "name": "payouts",
+                  "scope": 1574,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "struct LibPart.Part[]",
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "type": "struct LibPart.Part[]"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "LibPart.Part",
+                          "referencedDeclaration": 5753,
+                          "type": "struct LibPart.Part"
+                        },
+                        "id": 1568,
+                        "name": "UserDefinedTypeName",
+                        "src": "249:12:12"
+                      }
+                    ],
+                    "id": 1569,
+                    "name": "ArrayTypeName",
+                    "src": "249:14:12"
+                  }
+                ],
+                "id": 1570,
+                "name": "VariableDeclaration",
+                "src": "249:22:12"
+              },
+              {
+                "attributes": {
+                  "constant": false,
+                  "mutability": "mutable",
+                  "name": "originFees",
+                  "scope": 1574,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "struct LibPart.Part[]",
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "type": "struct LibPart.Part[]"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "LibPart.Part",
+                          "referencedDeclaration": 5753,
+                          "type": "struct LibPart.Part"
+                        },
+                        "id": 1571,
+                        "name": "UserDefinedTypeName",
+                        "src": "281:12:12"
+                      }
+                    ],
+                    "id": 1572,
+                    "name": "ArrayTypeName",
+                    "src": "281:14:12"
+                  }
+                ],
+                "id": 1573,
+                "name": "VariableDeclaration",
+                "src": "281:25:12"
+              }
+            ],
+            "id": 1574,
+            "name": "StructDefinition",
+            "src": "225:88:12"
+          },
+          {
+            "attributes": {
+              "implemented": true,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "decodeOrderDataV1",
+              "scope": 1592,
+              "stateMutability": "pure",
+              "virtual": false,
+              "visibility": "internal"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "data",
+                      "scope": 1591,
+                      "stateVariable": false,
+                      "storageLocation": "memory",
+                      "type": "bytes",
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "bytes",
+                          "type": "bytes"
+                        },
+                        "id": 1575,
+                        "name": "ElementaryTypeName",
+                        "src": "346:5:12"
+                      }
+                    ],
+                    "id": 1576,
+                    "name": "VariableDeclaration",
+                    "src": "346:17:12"
+                  }
+                ],
+                "id": 1577,
+                "name": "ParameterList",
+                "src": "345:19:12"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "orderData",
+                      "scope": 1591,
+                      "stateVariable": false,
+                      "storageLocation": "memory",
+                      "type": "struct LibOrderDataV1.DataV1",
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "DataV1",
+                          "referencedDeclaration": 1574,
+                          "type": "struct LibOrderDataV1.DataV1"
+                        },
+                        "id": 1578,
+                        "name": "UserDefinedTypeName",
+                        "src": "388:6:12"
+                      }
+                    ],
+                    "id": 1579,
+                    "name": "VariableDeclaration",
+                    "src": "388:23:12"
+                  }
+                ],
+                "id": 1580,
+                "name": "ParameterList",
+                "src": "387:25:12"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "=",
+                          "type": "struct LibOrderDataV1.DataV1 memory"
+                        },
+                        "children": [
                           {
-                            "typeIdentifier": "t_bytes_memory_ptr",
-                            "typeString": "bytes memory"
+                            "attributes": {
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 1579,
+                              "type": "struct LibOrderDataV1.DataV1 memory",
+                              "value": "orderData"
+                            },
+                            "id": 1581,
+                            "name": "Identifier",
+                            "src": "423:9:12"
                           },
                           {
-                            "typeIdentifier": "t_type$_t_struct$_DataV1_$1522_storage_ptr_$",
-                            "typeString": "type(struct LibOrderDataV1.DataV1 storage pointer)"
+                            "attributes": {
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "isStructConstructorCall": false,
+                              "lValueRequested": false,
+                              "names": [
+                                null
+                              ],
+                              "tryCall": false,
+                              "type": "struct LibOrderDataV1.DataV1 memory",
+                              "type_conversion": false
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": [
+                                    {
+                                      "typeIdentifier": "t_bytes_memory_ptr",
+                                      "typeString": "bytes memory"
+                                    },
+                                    {
+                                      "typeIdentifier": "t_type$_t_struct$_DataV1_$1574_storage_ptr_$",
+                                      "typeString": "type(struct LibOrderDataV1.DataV1 storage pointer)"
+                                    }
+                                  ],
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": true,
+                                  "lValueRequested": false,
+                                  "member_name": "decode",
+                                  "type": "function () pure"
+                                },
+                                "children": [
+                                  {
+                                    "attributes": {
+                                      "overloadedDeclarations": [
+                                        null
+                                      ],
+                                      "referencedDeclaration": 4294967295,
+                                      "type": "abi",
+                                      "value": "abi"
+                                    },
+                                    "id": 1582,
+                                    "name": "Identifier",
+                                    "src": "435:3:12"
+                                  }
+                                ],
+                                "id": 1583,
+                                "name": "MemberAccess",
+                                "src": "435:10:12"
+                              },
+                              {
+                                "attributes": {
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 1576,
+                                  "type": "bytes memory",
+                                  "value": "data"
+                                },
+                                "id": 1584,
+                                "name": "Identifier",
+                                "src": "446:4:12"
+                              },
+                              {
+                                "attributes": {
+                                  "isConstant": false,
+                                  "isInlineArray": false,
+                                  "isLValue": false,
+                                  "isPure": true,
+                                  "lValueRequested": false,
+                                  "type": "type(struct LibOrderDataV1.DataV1 storage pointer)"
+                                },
+                                "children": [
+                                  {
+                                    "attributes": {
+                                      "overloadedDeclarations": [
+                                        null
+                                      ],
+                                      "referencedDeclaration": 1574,
+                                      "type": "type(struct LibOrderDataV1.DataV1 storage pointer)",
+                                      "value": "DataV1"
+                                    },
+                                    "id": 1585,
+                                    "name": "Identifier",
+                                    "src": "453:6:12"
+                                  }
+                                ],
+                                "id": 1586,
+                                "name": "TupleExpression",
+                                "src": "452:8:12"
+                              }
+                            ],
+                            "id": 1587,
+                            "name": "FunctionCall",
+                            "src": "435:26:12"
                           }
                         ],
-                        "expression": {
-                          "id": 1530,
-                          "name": "abi",
-                          "nodeType": "Identifier",
-                          "overloadedDeclarations": [],
-                          "referencedDeclaration": 4294967295,
-                          "src": "451:3:11",
-                          "typeDescriptions": {
-                            "typeIdentifier": "t_magic_abi",
-                            "typeString": "abi"
-                          }
-                        },
-                        "id": 1531,
-                        "isConstant": false,
-                        "isLValue": false,
-                        "isPure": true,
-                        "lValueRequested": false,
-                        "memberName": "decode",
-                        "nodeType": "MemberAccess",
-                        "src": "451:10:11",
-                        "typeDescriptions": {
-                          "typeIdentifier": "t_function_abidecode_pure$__$returns$__$",
-                          "typeString": "function () pure"
-                        }
-                      },
-                      "id": 1535,
-                      "isConstant": false,
-                      "isLValue": false,
-                      "isPure": false,
-                      "kind": "functionCall",
-                      "lValueRequested": false,
-                      "names": [],
-                      "nodeType": "FunctionCall",
-                      "src": "451:26:11",
-                      "tryCall": false,
-                      "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_DataV1_$1522_memory_ptr",
-                        "typeString": "struct LibOrderDataV1.DataV1 memory"
+                        "id": 1588,
+                        "name": "Assignment",
+                        "src": "423:38:12"
                       }
-                    },
-                    "src": "439:38:11",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_DataV1_$1522_memory_ptr",
-                      "typeString": "struct LibOrderDataV1.DataV1 memory"
-                    }
-                  },
-                  "id": 1537,
-                  "nodeType": "ExpressionStatement",
-                  "src": "439:38:11"
-                }
-              ]
-            },
-            "id": 1539,
-            "implemented": true,
-            "kind": "function",
-            "modifiers": [],
-            "name": "decodeOrderDataV1",
-            "nodeType": "FunctionDefinition",
-            "parameters": {
-              "id": 1525,
-              "nodeType": "ParameterList",
-              "parameters": [
-                {
-                  "constant": false,
-                  "id": 1524,
-                  "mutability": "mutable",
-                  "name": "data",
-                  "nodeType": "VariableDeclaration",
-                  "scope": 1539,
-                  "src": "361:17:11",
-                  "stateVariable": false,
-                  "storageLocation": "memory",
-                  "typeDescriptions": {
-                    "typeIdentifier": "t_bytes_memory_ptr",
-                    "typeString": "bytes"
-                  },
-                  "typeName": {
-                    "id": 1523,
-                    "name": "bytes",
-                    "nodeType": "ElementaryTypeName",
-                    "src": "361:5:11",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_bytes_storage_ptr",
-                      "typeString": "bytes"
-                    }
-                  },
-                  "visibility": "internal"
-                }
-              ],
-              "src": "360:19:11"
-            },
-            "returnParameters": {
-              "id": 1528,
-              "nodeType": "ParameterList",
-              "parameters": [
-                {
-                  "constant": false,
-                  "id": 1527,
-                  "mutability": "mutable",
-                  "name": "orderData",
-                  "nodeType": "VariableDeclaration",
-                  "scope": 1539,
-                  "src": "403:23:11",
-                  "stateVariable": false,
-                  "storageLocation": "memory",
-                  "typeDescriptions": {
-                    "typeIdentifier": "t_struct$_DataV1_$1522_memory_ptr",
-                    "typeString": "struct LibOrderDataV1.DataV1"
-                  },
-                  "typeName": {
-                    "id": 1526,
-                    "name": "DataV1",
-                    "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 1522,
-                    "src": "403:6:11",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_DataV1_$1522_storage_ptr",
-                      "typeString": "struct LibOrderDataV1.DataV1"
-                    }
-                  },
-                  "visibility": "internal"
-                }
-              ],
-              "src": "402:25:11"
-            },
-            "scope": 1540,
-            "src": "334:151:11",
-            "stateMutability": "pure",
-            "virtual": false,
-            "visibility": "internal"
+                    ],
+                    "id": 1589,
+                    "name": "ExpressionStatement",
+                    "src": "423:38:12"
+                  }
+                ],
+                "id": 1590,
+                "name": "Block",
+                "src": "413:55:12"
+              }
+            ],
+            "id": 1591,
+            "name": "FunctionDefinition",
+            "src": "319:149:12"
           }
         ],
-        "scope": 1541,
-        "src": "145:343:11"
+        "id": 1592,
+        "name": "ContractDefinition",
+        "src": "138:333:12"
       }
     ],
-    "src": "35:455:11"
+    "id": 1593,
+    "name": "SourceUnit",
+    "src": "33:439:12"
   },
   "compiler": {
     "name": "solc",
     "version": "0.7.6+commit.7338295f.Emscripten.clang"
   },
   "networks": {},
-  "schemaVersion": "3.3.2",
-  "updatedAt": "2021-05-17T05:12:26.179Z",
+  "schemaVersion": "3.4.1",
+  "updatedAt": "2021-09-22T12:50:41.813Z",
   "devdoc": {
     "kind": "dev",
     "methods": {},

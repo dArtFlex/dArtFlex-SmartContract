@@ -3,16 +3,11 @@
 pragma solidity >=0.6.2 <0.8.0;
 pragma abicoder v2;
 
-import "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol";
-import "@openzeppelin/contracts-upgradeable/token/ERC721/ERC721BurnableUpgradeable.sol";
-import "./ERC721Lazy.sol";
-import "../HasContractURI.sol";
+import "@openzeppelin/contracts-upgradeable/utils/ReentrancyGuardUpgradeable.sol";
+import "./ERC721Base.sol";
 
-contract ERC721RaribleUser is OwnableUpgradeable, ERC721BurnableUpgradeable, ERC721Lazy, HasContractURI {
-
-    event CreateERC721RaribleUser(address owner, string name, string symbol);
-
-    function __ERC721RaribleUser_init(string memory _name, string memory _symbol, string memory baseURI, string memory contractURI, address[] memory operators) external initializer {
+contract ERC721RaribleUser is ERC721Base, ReentrancyGuardUpgradeable {
+    function __ERC721RaribleUser_init(string memory _name, string memory _symbol, string memory baseURI, string memory contractURI) external initializer {
         _setBaseURI(baseURI);
         __ERC721Lazy_init_unchained();
         __Context_init_unchained();
@@ -23,13 +18,9 @@ contract ERC721RaribleUser is OwnableUpgradeable, ERC721BurnableUpgradeable, ERC
         __HasContractURI_init_unchained(contractURI);
         __RoyaltiesV2Upgradeable_init_unchained();
         __ERC721_init_unchained(_name, _symbol);
-        for(uint i = 0; i < operators.length; i++) {
-            setApprovalForAll(operators[i], true);
-        }
-        emit CreateERC721RaribleUser(_msgSender(), _name, _symbol);
     }
 
-    function mintAndTransfer(LibERC721LazyMint.Mint721Data memory data, address to) public override virtual {
+    function mintAndTransfer(LibERC721LazyMint.Mint721Data memory data, address to) public nonReentrant override virtual {
         require(owner() == data.creators[0].account, "minter is not the owner");
         super.mintAndTransfer(data, to);
     }

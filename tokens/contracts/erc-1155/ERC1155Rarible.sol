@@ -6,8 +6,6 @@ pragma abicoder v2;
 import "./ERC1155Base.sol";
 
 contract ERC1155Rarible is ERC1155Base {
-    event CreateERC1155Rarible(address owner, string name, string symbol);
-
     function __ERC1155Rarible_init(string memory _name, string memory _symbol, string memory baseURI, string memory contractURI) external initializer {
         __Ownable_init_unchained();
         __ERC1155Lazy_init_unchained();
@@ -20,7 +18,6 @@ contract ERC1155Rarible is ERC1155Base {
         __RoyaltiesV2Upgradeable_init_unchained();
         __ERC1155Base_init_unchained(_name, _symbol);
         _setBaseURI(baseURI);
-        emit CreateERC1155Rarible(_msgSender(), _name, _symbol);
     }
     uint256[50] private __gap;
 }

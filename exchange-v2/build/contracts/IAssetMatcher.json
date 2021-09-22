@@ -62,7 +62,7 @@
       "type": "function"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.7.6+commit.7338295f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"components\":[{\"internalType\":\"bytes4\",\"name\":\"assetClass\",\"type\":\"bytes4\"},{\"internalType\":\"bytes\",\"name\":\"data\",\"type\":\"bytes\"}],\"internalType\":\"struct LibAsset.AssetType\",\"name\":\"leftAssetType\",\"type\":\"tuple\"},{\"components\":[{\"internalType\":\"bytes4\",\"name\":\"assetClass\",\"type\":\"bytes4\"},{\"internalType\":\"bytes\",\"name\":\"data\",\"type\":\"bytes\"}],\"internalType\":\"struct LibAsset.AssetType\",\"name\":\"rightAssetType\",\"type\":\"tuple\"}],\"name\":\"matchAssets\",\"outputs\":[{\"components\":[{\"internalType\":\"bytes4\",\"name\":\"assetClass\",\"type\":\"bytes4\"},{\"internalType\":\"bytes\",\"name\":\"data\",\"type\":\"bytes\"}],\"internalType\":\"struct LibAsset.AssetType\",\"name\":\"\",\"type\":\"tuple\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/F/Development/protocol-contracts/exchange-v2/contracts/IAssetMatcher.sol\":\"IAssetMatcher\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/F/Development/protocol-contracts/exchange-v2/contracts/IAssetMatcher.sol\":{\"keccak256\":\"0xa8eac287cc458e3b55ae945ac4326bb7d53500bcf68caddefa7696e36cc00594\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://2a744d5ae412ab801192b0a1fb5ba73b9c0263509d2344cfa4813799d4836cf3\",\"dweb:/ipfs/QmQdMYAxDQxzm8e8nsFnfPh8NPtnm29hbfZr2f3wiHYTdj\"]},\"@rarible/lib-asset/contracts/LibAsset.sol\":{\"keccak256\":\"0xbb1b56c1b6686e8666437761a2aa671b53eba875f254d51590891d4b2ae40625\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://23b080b1e9f993ae051d36af3052dc269412dcf984ebca7252ceaf576ace33a1\",\"dweb:/ipfs/QmUrWPuJHy5YANMKzG9NoYcmmkrWpLdsKgrWVMAkBsXKER\"]}},\"version\":1}",
+  "metadata": "{\"compiler\":{\"version\":\"0.7.6+commit.7338295f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"components\":[{\"internalType\":\"bytes4\",\"name\":\"assetClass\",\"type\":\"bytes4\"},{\"internalType\":\"bytes\",\"name\":\"data\",\"type\":\"bytes\"}],\"internalType\":\"struct LibAsset.AssetType\",\"name\":\"leftAssetType\",\"type\":\"tuple\"},{\"components\":[{\"internalType\":\"bytes4\",\"name\":\"assetClass\",\"type\":\"bytes4\"},{\"internalType\":\"bytes\",\"name\":\"data\",\"type\":\"bytes\"}],\"internalType\":\"struct LibAsset.AssetType\",\"name\":\"rightAssetType\",\"type\":\"tuple\"}],\"name\":\"matchAssets\",\"outputs\":[{\"components\":[{\"internalType\":\"bytes4\",\"name\":\"assetClass\",\"type\":\"bytes4\"},{\"internalType\":\"bytes\",\"name\":\"data\",\"type\":\"bytes\"}],\"internalType\":\"struct LibAsset.AssetType\",\"name\":\"\",\"type\":\"tuple\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/F/Development/ideasoft/dArtFlex/protocol-contracts/exchange-v2/contracts/exchange/v2/IAssetMatcher.sol\":\"IAssetMatcher\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/F/Development/ideasoft/dArtFlex/protocol-contracts/exchange-v2/contracts/exchange/v2/IAssetMatcher.sol\":{\"keccak256\":\"0xbffdded17a6f9d2f63ef8e59dc7841e6065db46c94edf6cfef81a9346ec70a59\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://4c16033ba33b2dcc5bcc199703fc1f6c5b9e3c795ab21771692698743cfcb39b\",\"dweb:/ipfs/QmZm57vzqDNaa9orTfPEbmCdb3mPVzMYr7r7aEFPTm68yi\"]},\"/F/Development/ideasoft/dArtFlex/protocol-contracts/exchange-v2/contracts/exchange/v2/LibAsset.sol\":{\"keccak256\":\"0xbb1b56c1b6686e8666437761a2aa671b53eba875f254d51590891d4b2ae40625\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://23b080b1e9f993ae051d36af3052dc269412dcf984ebca7252ceaf576ace33a1\",\"dweb:/ipfs/QmUrWPuJHy5YANMKzG9NoYcmmkrWpLdsKgrWVMAkBsXKER\"]}},\"version\":1}",
   "bytecode": "0x",
   "deployedBytecode": "0x",
   "immutableReferences": {},
@@ -70,24 +70,24 @@
   "deployedGeneratedSources": [],
   "sourceMap": "",
   "deployedSourceMap": "",
-  "source": "// SPDX-License-Identifier: MIT\r\n\r\npragma solidity >=0.6.9 <0.8.0;\r\npragma abicoder v2;\r\n\r\nimport \"@rarible/lib-asset/contracts/LibAsset.sol\";\r\n\r\ninterface IAssetMatcher {\r\n    function matchAssets(\r\n        LibAsset.AssetType memory leftAssetType,\r\n        LibAsset.AssetType memory rightAssetType\r\n    ) external view returns (LibAsset.AssetType memory);\r\n}\r\n",
-  "sourcePath": "F:\\Development\\protocol-contracts\\exchange-v2\\contracts\\IAssetMatcher.sol",
+  "source": "// SPDX-License-Identifier: MIT\n\npragma solidity >=0.6.9 <0.8.0;\npragma abicoder v2;\n\nimport \"./LibAsset.sol\";\n\ninterface IAssetMatcher {\n    function matchAssets(\n        LibAsset.AssetType memory leftAssetType,\n        LibAsset.AssetType memory rightAssetType\n    ) external view returns (LibAsset.AssetType memory);\n}\n",
+  "sourcePath": "F:/Development/ideasoft/dArtFlex/protocol-contracts/exchange-v2/contracts/exchange/v2/IAssetMatcher.sol",
   "ast": {
-    "absolutePath": "/F/Development/protocol-contracts/exchange-v2/contracts/IAssetMatcher.sol",
+    "absolutePath": "/F/Development/ideasoft/dArtFlex/protocol-contracts/exchange-v2/contracts/exchange/v2/IAssetMatcher.sol",
     "exportedSymbols": {
       "IAssetMatcher": [
-        872
+        13
       ],
       "LibAsset": [
-        5418
+        154
       ]
     },
-    "id": 873,
+    "id": 14,
     "license": "MIT",
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 860,
+        "id": 1,
         "literals": [
           "solidity",
           ">=",
@@ -98,25 +98,25 @@
           ".0"
         ],
         "nodeType": "PragmaDirective",
-        "src": "35:31:4"
+        "src": "33:31:0"
       },
       {
-        "id": 861,
+        "id": 2,
         "literals": [
           "abicoder",
           "v2"
         ],
         "nodeType": "PragmaDirective",
-        "src": "68:19:4"
+        "src": "65:19:0"
       },
       {
-        "absolutePath": "@rarible/lib-asset/contracts/LibAsset.sol",
-        "file": "@rarible/lib-asset/contracts/LibAsset.sol",
-        "id": 862,
+        "absolutePath": "/F/Development/ideasoft/dArtFlex/protocol-contracts/exchange-v2/contracts/exchange/v2/LibAsset.sol",
+        "file": "./LibAsset.sol",
+        "id": 3,
         "nodeType": "ImportDirective",
-        "scope": 873,
-        "sourceUnit": 5419,
-        "src": "91:51:4",
+        "scope": 14,
+        "sourceUnit": 155,
+        "src": "86:24:0",
         "symbolAliases": [],
         "unitAlias": ""
       },
@@ -126,47 +126,47 @@
         "contractDependencies": [],
         "contractKind": "interface",
         "fullyImplemented": false,
-        "id": 872,
+        "id": 13,
         "linearizedBaseContracts": [
-          872
+          13
         ],
         "name": "IAssetMatcher",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "functionSelector": "6d3f7cb0",
-            "id": 871,
+            "id": 12,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "matchAssets",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 867,
+              "id": 8,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 864,
+                  "id": 5,
                   "mutability": "mutable",
                   "name": "leftAssetType",
                   "nodeType": "VariableDeclaration",
-                  "scope": 871,
-                  "src": "208:39:4",
+                  "scope": 12,
+                  "src": "172:39:0",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_struct$_AssetType_$5370_memory_ptr",
+                    "typeIdentifier": "t_struct$_AssetType_$106_memory_ptr",
                     "typeString": "struct LibAsset.AssetType"
                   },
                   "typeName": {
-                    "id": 863,
+                    "id": 4,
                     "name": "LibAsset.AssetType",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 5370,
-                    "src": "208:18:4",
+                    "referencedDeclaration": 106,
+                    "src": "172:18:0",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_AssetType_$5370_storage_ptr",
+                      "typeIdentifier": "t_struct$_AssetType_$106_storage_ptr",
                       "typeString": "struct LibAsset.AssetType"
                     }
                   },
@@ -174,265 +174,288 @@
                 },
                 {
                   "constant": false,
-                  "id": 866,
+                  "id": 7,
                   "mutability": "mutable",
                   "name": "rightAssetType",
                   "nodeType": "VariableDeclaration",
-                  "scope": 871,
-                  "src": "258:40:4",
+                  "scope": 12,
+                  "src": "221:40:0",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_struct$_AssetType_$5370_memory_ptr",
+                    "typeIdentifier": "t_struct$_AssetType_$106_memory_ptr",
                     "typeString": "struct LibAsset.AssetType"
                   },
                   "typeName": {
-                    "id": 865,
+                    "id": 6,
                     "name": "LibAsset.AssetType",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 5370,
-                    "src": "258:18:4",
+                    "referencedDeclaration": 106,
+                    "src": "221:18:0",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_AssetType_$5370_storage_ptr",
+                      "typeIdentifier": "t_struct$_AssetType_$106_storage_ptr",
                       "typeString": "struct LibAsset.AssetType"
                     }
                   },
                   "visibility": "internal"
                 }
               ],
-              "src": "197:108:4"
+              "src": "162:105:0"
             },
             "returnParameters": {
-              "id": 870,
+              "id": 11,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 869,
+                  "id": 10,
                   "mutability": "mutable",
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 871,
-                  "src": "329:25:4",
+                  "scope": 12,
+                  "src": "291:25:0",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_struct$_AssetType_$5370_memory_ptr",
+                    "typeIdentifier": "t_struct$_AssetType_$106_memory_ptr",
                     "typeString": "struct LibAsset.AssetType"
                   },
                   "typeName": {
-                    "id": 868,
+                    "id": 9,
                     "name": "LibAsset.AssetType",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 5370,
-                    "src": "329:18:4",
+                    "referencedDeclaration": 106,
+                    "src": "291:18:0",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_AssetType_$5370_storage_ptr",
+                      "typeIdentifier": "t_struct$_AssetType_$106_storage_ptr",
                       "typeString": "struct LibAsset.AssetType"
                     }
                   },
                   "visibility": "internal"
                 }
               ],
-              "src": "328:27:4"
+              "src": "290:27:0"
             },
-            "scope": 872,
-            "src": "177:179:4",
+            "scope": 13,
+            "src": "142:176:0",
             "stateMutability": "view",
             "virtual": false,
             "visibility": "external"
           }
         ],
-        "scope": 873,
-        "src": "146:213:4"
+        "scope": 14,
+        "src": "112:208:0"
       }
     ],
-    "src": "35:326:4"
+    "src": "33:288:0"
   },
   "legacyAST": {
-    "absolutePath": "/F/Development/protocol-contracts/exchange-v2/contracts/IAssetMatcher.sol",
-    "exportedSymbols": {
-      "IAssetMatcher": [
-        872
-      ],
-      "LibAsset": [
-        5418
-      ]
+    "attributes": {
+      "absolutePath": "/F/Development/ideasoft/dArtFlex/protocol-contracts/exchange-v2/contracts/exchange/v2/IAssetMatcher.sol",
+      "exportedSymbols": {
+        "IAssetMatcher": [
+          13
+        ],
+        "LibAsset": [
+          154
+        ]
+      },
+      "license": "MIT"
     },
-    "id": 873,
-    "license": "MIT",
-    "nodeType": "SourceUnit",
-    "nodes": [
+    "children": [
       {
-        "id": 860,
-        "literals": [
-          "solidity",
-          ">=",
-          "0.6",
-          ".9",
-          "<",
-          "0.8",
-          ".0"
-        ],
-        "nodeType": "PragmaDirective",
-        "src": "35:31:4"
+        "attributes": {
+          "literals": [
+            "solidity",
+            ">=",
+            "0.6",
+            ".9",
+            "<",
+            "0.8",
+            ".0"
+          ]
+        },
+        "id": 1,
+        "name": "PragmaDirective",
+        "src": "33:31:0"
       },
       {
-        "id": 861,
-        "literals": [
-          "abicoder",
-          "v2"
-        ],
-        "nodeType": "PragmaDirective",
-        "src": "68:19:4"
+        "attributes": {
+          "literals": [
+            "abicoder",
+            "v2"
+          ]
+        },
+        "id": 2,
+        "name": "PragmaDirective",
+        "src": "65:19:0"
       },
       {
-        "absolutePath": "@rarible/lib-asset/contracts/LibAsset.sol",
-        "file": "@rarible/lib-asset/contracts/LibAsset.sol",
-        "id": 862,
-        "nodeType": "ImportDirective",
-        "scope": 873,
-        "sourceUnit": 5419,
-        "src": "91:51:4",
-        "symbolAliases": [],
-        "unitAlias": ""
+        "attributes": {
+          "SourceUnit": 155,
+          "absolutePath": "/F/Development/ideasoft/dArtFlex/protocol-contracts/exchange-v2/contracts/exchange/v2/LibAsset.sol",
+          "file": "./LibAsset.sol",
+          "scope": 14,
+          "symbolAliases": [
+            null
+          ],
+          "unitAlias": ""
+        },
+        "id": 3,
+        "name": "ImportDirective",
+        "src": "86:24:0"
       },
       {
-        "abstract": false,
-        "baseContracts": [],
-        "contractDependencies": [],
-        "contractKind": "interface",
-        "fullyImplemented": false,
-        "id": 872,
-        "linearizedBaseContracts": [
-          872
-        ],
-        "name": "IAssetMatcher",
-        "nodeType": "ContractDefinition",
-        "nodes": [
+        "attributes": {
+          "abstract": false,
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "interface",
+          "fullyImplemented": false,
+          "linearizedBaseContracts": [
+            13
+          ],
+          "name": "IAssetMatcher",
+          "scope": 14
+        },
+        "children": [
           {
-            "functionSelector": "6d3f7cb0",
-            "id": 871,
-            "implemented": false,
-            "kind": "function",
-            "modifiers": [],
-            "name": "matchAssets",
-            "nodeType": "FunctionDefinition",
-            "parameters": {
-              "id": 867,
-              "nodeType": "ParameterList",
-              "parameters": [
-                {
-                  "constant": false,
-                  "id": 864,
-                  "mutability": "mutable",
-                  "name": "leftAssetType",
-                  "nodeType": "VariableDeclaration",
-                  "scope": 871,
-                  "src": "208:39:4",
-                  "stateVariable": false,
-                  "storageLocation": "memory",
-                  "typeDescriptions": {
-                    "typeIdentifier": "t_struct$_AssetType_$5370_memory_ptr",
-                    "typeString": "struct LibAsset.AssetType"
-                  },
-                  "typeName": {
-                    "id": 863,
-                    "name": "LibAsset.AssetType",
-                    "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 5370,
-                    "src": "208:18:4",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_AssetType_$5370_storage_ptr",
-                      "typeString": "struct LibAsset.AssetType"
-                    }
-                  },
-                  "visibility": "internal"
-                },
-                {
-                  "constant": false,
-                  "id": 866,
-                  "mutability": "mutable",
-                  "name": "rightAssetType",
-                  "nodeType": "VariableDeclaration",
-                  "scope": 871,
-                  "src": "258:40:4",
-                  "stateVariable": false,
-                  "storageLocation": "memory",
-                  "typeDescriptions": {
-                    "typeIdentifier": "t_struct$_AssetType_$5370_memory_ptr",
-                    "typeString": "struct LibAsset.AssetType"
-                  },
-                  "typeName": {
-                    "id": 865,
-                    "name": "LibAsset.AssetType",
-                    "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 5370,
-                    "src": "258:18:4",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_AssetType_$5370_storage_ptr",
-                      "typeString": "struct LibAsset.AssetType"
-                    }
-                  },
-                  "visibility": "internal"
-                }
+            "attributes": {
+              "functionSelector": "6d3f7cb0",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
               ],
-              "src": "197:108:4"
+              "name": "matchAssets",
+              "scope": 13,
+              "stateMutability": "view",
+              "virtual": false,
+              "visibility": "external"
             },
-            "returnParameters": {
-              "id": 870,
-              "nodeType": "ParameterList",
-              "parameters": [
-                {
-                  "constant": false,
-                  "id": 869,
-                  "mutability": "mutable",
-                  "name": "",
-                  "nodeType": "VariableDeclaration",
-                  "scope": 871,
-                  "src": "329:25:4",
-                  "stateVariable": false,
-                  "storageLocation": "memory",
-                  "typeDescriptions": {
-                    "typeIdentifier": "t_struct$_AssetType_$5370_memory_ptr",
-                    "typeString": "struct LibAsset.AssetType"
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "leftAssetType",
+                      "scope": 12,
+                      "stateVariable": false,
+                      "storageLocation": "memory",
+                      "type": "struct LibAsset.AssetType",
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "LibAsset.AssetType",
+                          "referencedDeclaration": 106,
+                          "type": "struct LibAsset.AssetType"
+                        },
+                        "id": 4,
+                        "name": "UserDefinedTypeName",
+                        "src": "172:18:0"
+                      }
+                    ],
+                    "id": 5,
+                    "name": "VariableDeclaration",
+                    "src": "172:39:0"
                   },
-                  "typeName": {
-                    "id": 868,
-                    "name": "LibAsset.AssetType",
-                    "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 5370,
-                    "src": "329:18:4",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_AssetType_$5370_storage_ptr",
-                      "typeString": "struct LibAsset.AssetType"
-                    }
-                  },
-                  "visibility": "internal"
-                }
-              ],
-              "src": "328:27:4"
-            },
-            "scope": 872,
-            "src": "177:179:4",
-            "stateMutability": "view",
-            "virtual": false,
-            "visibility": "external"
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "rightAssetType",
+                      "scope": 12,
+                      "stateVariable": false,
+                      "storageLocation": "memory",
+                      "type": "struct LibAsset.AssetType",
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "LibAsset.AssetType",
+                          "referencedDeclaration": 106,
+                          "type": "struct LibAsset.AssetType"
+                        },
+                        "id": 6,
+                        "name": "UserDefinedTypeName",
+                        "src": "221:18:0"
+                      }
+                    ],
+                    "id": 7,
+                    "name": "VariableDeclaration",
+                    "src": "221:40:0"
+                  }
+                ],
+                "id": 8,
+                "name": "ParameterList",
+                "src": "162:105:0"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "",
+                      "scope": 12,
+                      "stateVariable": false,
+                      "storageLocation": "memory",
+                      "type": "struct LibAsset.AssetType",
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "LibAsset.AssetType",
+                          "referencedDeclaration": 106,
+                          "type": "struct LibAsset.AssetType"
+                        },
+                        "id": 9,
+                        "name": "UserDefinedTypeName",
+                        "src": "291:18:0"
+                      }
+                    ],
+                    "id": 10,
+                    "name": "VariableDeclaration",
+                    "src": "291:25:0"
+                  }
+                ],
+                "id": 11,
+                "name": "ParameterList",
+                "src": "290:27:0"
+              }
+            ],
+            "id": 12,
+            "name": "FunctionDefinition",
+            "src": "142:176:0"
           }
         ],
-        "scope": 873,
-        "src": "146:213:4"
+        "id": 13,
+        "name": "ContractDefinition",
+        "src": "112:208:0"
       }
     ],
-    "src": "35:326:4"
+    "id": 14,
+    "name": "SourceUnit",
+    "src": "33:288:0"
   },
   "compiler": {
     "name": "solc",
     "version": "0.7.6+commit.7338295f.Emscripten.clang"
   },
   "networks": {},
-  "schemaVersion": "3.3.2",
-  "updatedAt": "2021-05-17T05:12:26.151Z",
+  "schemaVersion": "3.4.1",
+  "updatedAt": "2021-09-22T02:31:27.326Z",
   "devdoc": {
     "kind": "dev",
     "methods": {},

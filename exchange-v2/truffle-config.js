@@ -18,11 +18,11 @@ function createNetwork(name) {
     return {
       provider: () => createProvider(json.address, json.key, json.url),
       // from: json.address,
-      // gas: 4500000,
-      // gasPrice: gasPrice + "000000000",
+      // gas: '0x44AA20',
+      // gasPrice: '0x4A817C800',
       network_id: json.network_id,
       skipDryRun: true,
-      networkCheckTimeout: 10000000
+      networkCheckTimeout: 500000
     };
   } catch (e) {
     return null;

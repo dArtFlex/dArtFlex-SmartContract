@@ -6,7 +6,7 @@ pragma abicoder v2;
 import "./LibPart.sol";
 
 interface RoyaltiesV2 {
-    event RoyaltiesSet(uint256 tokenId, LibPart.Part[] royalties);
+    event RoyaltiesSet(uint256 tokenId, LibPart.Part[] fees);
 
     function getRoyalties(uint256 id) external view returns (LibPart.Part[] memory);
 }

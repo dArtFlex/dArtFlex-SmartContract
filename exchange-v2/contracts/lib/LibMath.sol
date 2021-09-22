@@ -18,9 +18,8 @@ library LibMath {
         uint256 denominator,
         uint256 target
     ) internal pure returns (uint256 partialAmount) {
-        if (isRoundingErrorFloor(numerator, denominator, target)) {
-            revert("rounding error");
-        }
+        require(!isRoundingErrorFloor(numerator, denominator, target), "rounding error");
+
         partialAmount = numerator.mul(target).div(denominator);
     }
 
@@ -59,7 +58,7 @@ library LibMath {
         // less than 0.1%.
         // The relative error is `remainder / (numerator * target)`.
         // We want the relative error less than 1 / 1000:
-        //        remainder / (numerator * target)  <  1 / 1000
+        //        remainder / (numerator * denominator)  <  1 / 1000
         // or equivalently:
         //        1000 * remainder  <  numerator * target
         // so we have a rounding error iff:
@@ -77,9 +76,7 @@ library LibMath {
         uint256 denominator,
         uint256 target
     ) internal pure returns (uint256 partialAmount) {
-        if (isRoundingErrorCeil(numerator, denominator, target)) {
-            revert("rounding error");
-        }
+        require(!isRoundingErrorCeil(numerator, denominator, target), "rounding error");
         partialAmount = numerator.mul(target).add(denominator.sub(1)).div(denominator);
     }
 

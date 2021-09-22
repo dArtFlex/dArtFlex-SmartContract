@@ -14,6 +14,6 @@ contract TestERC1155WithRoyaltiesV1 is Initializable, RoyaltiesV1Impl, ERC1155Up
     }
     function mint(address to, uint tokenId, LibPart.Part[] memory _fees, uint amount) external {
         _mint(to, tokenId, amount, "");
-        _saveRoyalties(tokenId, _fees);
+        _saveFees(tokenId, _fees);
     }
 }

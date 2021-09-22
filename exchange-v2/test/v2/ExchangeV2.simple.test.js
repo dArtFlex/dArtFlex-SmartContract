@@ -2,8 +2,8 @@ const { deployProxy, upgradeProxy } = require('@openzeppelin/truffle-upgrades');
 const ExchangeSimpleV2 = artifacts.require("ExchangeSimpleV2.sol");
 const ExchangeSimpleV2_1 = artifacts.require("ExchangeSimpleV2_1.sol");
 const TestERC20 = artifacts.require("TestERC20.sol");
-const TransferProxyTest = artifacts.require("TransferProxyTest.sol");
-const ERC20TransferProxyTest = artifacts.require("ERC20TransferProxyTest.sol");
+const TransferProxy = artifacts.require("TransferProxy.sol");
+const ERC20TransferProxy = artifacts.require("ERC20TransferProxy.sol");
 const LibOrderTest = artifacts.require("LibOrderTest.sol");
 
 const { Order, Asset, sign } = require("../order");
@@ -22,9 +22,13 @@ contract("ExchangeSimpleV2", accounts => {
 
 	beforeEach(async () => {
 		libOrder = await LibOrderTest.new();
-		transferProxy = await TransferProxyTest.new();
-		erc20TransferProxy = await ERC20TransferProxyTest.new();
+		transferProxy = await TransferProxy.new();
+		await transferProxy.__TransferProxy_init();
+		erc20TransferProxy = await ERC20TransferProxy.new();
+		await erc20TransferProxy.__ERC20TransferProxy_init();
 		testing = await deployProxy(ExchangeSimpleV2, [transferProxy.address, erc20TransferProxy.address], { initializer: "__ExchangeSimpleV2_init" });
+		await transferProxy.addOperator(testing.address);
+		await erc20TransferProxy.addOperator(testing.address);
 		t1 = await TestERC20.new();
 		t2 = await TestERC20.new();
 	});
@@ -115,7 +119,6 @@ contract("ExchangeSimpleV2", accounts => {
 			const { left, right } = await prepare2Orders()
 			right.makeAsset.value = 100;
 			right.takeAsset.value = 50;
-			right.salt = 0;
 
 			await testing.matchOrders(left, await getSignature(left, accounts[1]), right, "0x", { from: accounts[2] });
 			await testing.matchOrders(left, await getSignature(left, accounts[1]), right, "0x", { from: accounts[2] });
@@ -194,7 +197,7 @@ contract("ExchangeSimpleV2", accounts => {
 	}
 
 	async function getSignature(order, signer) {
-		return sign(order, signer, testing.address);
+		return sign(order, signer, Number(await testing.getChainId()), testing.address);
 	}
 
 });

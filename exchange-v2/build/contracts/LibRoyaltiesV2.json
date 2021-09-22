@@ -7,23 +7,23 @@
   "immutableReferences": {},
   "generatedSources": [],
   "deployedGeneratedSources": [],
-  "sourceMap": "66:174:42:-:0;;;;;;;;;;;;;;;;;;;;;;;;;",
-  "deployedSourceMap": "66:174:42:-:0;;;;;;;;",
+  "sourceMap": "66:174:52:-:0;;;;;;;;;;;;;;;;;;;;;;;;;",
+  "deployedSourceMap": "66:174:52:-:0;;;;;;;;",
   "source": "// SPDX-License-Identifier: MIT\n\npragma solidity >=0.6.2 <0.8.0;\n\nlibrary LibRoyaltiesV2 {\n    /*\n     * bytes4(keccak256('getRoyalties(LibAsset.AssetType)')) == 0x44c74bcc\n     */\n    bytes4 constant _INTERFACE_ID_ROYALTIES = 0x44c74bcc;\n}\n",
   "sourcePath": "@rarible/royalties/contracts/LibRoyaltiesV2.sol",
   "ast": {
     "absolutePath": "@rarible/royalties/contracts/LibRoyaltiesV2.sol",
     "exportedSymbols": {
       "LibRoyaltiesV2": [
-        5477
+        6156
       ]
     },
-    "id": 5478,
+    "id": 6157,
     "license": "MIT",
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 5473,
+        "id": 6152,
         "literals": [
           "solidity",
           ">=",
@@ -34,7 +34,7 @@
           ".0"
         ],
         "nodeType": "PragmaDirective",
-        "src": "33:31:42"
+        "src": "33:31:52"
       },
       {
         "abstract": false,
@@ -42,21 +42,21 @@
         "contractDependencies": [],
         "contractKind": "library",
         "fullyImplemented": true,
-        "id": 5477,
+        "id": 6156,
         "linearizedBaseContracts": [
-          5477
+          6156
         ],
         "name": "LibRoyaltiesV2",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "constant": true,
-            "id": 5476,
+            "id": 6155,
             "mutability": "constant",
             "name": "_INTERFACE_ID_ROYALTIES",
             "nodeType": "VariableDeclaration",
-            "scope": 5477,
-            "src": "185:52:42",
+            "scope": 6156,
+            "src": "185:52:52",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -64,10 +64,10 @@
               "typeString": "bytes4"
             },
             "typeName": {
-              "id": 5474,
+              "id": 6153,
               "name": "bytes4",
               "nodeType": "ElementaryTypeName",
-              "src": "185:6:42",
+              "src": "185:6:52",
               "typeDescriptions": {
                 "typeIdentifier": "t_bytes4",
                 "typeString": "bytes4"
@@ -75,14 +75,14 @@
             },
             "value": {
               "hexValue": "30783434633734626363",
-              "id": 5475,
+              "id": 6154,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
               "kind": "number",
               "lValueRequested": false,
               "nodeType": "Literal",
-              "src": "227:10:42",
+              "src": "227:10:52",
               "typeDescriptions": {
                 "typeIdentifier": "t_rational_1153911756_by_1",
                 "typeString": "int_const 1153911756"
@@ -92,106 +92,115 @@
             "visibility": "internal"
           }
         ],
-        "scope": 5478,
-        "src": "66:174:42"
+        "scope": 6157,
+        "src": "66:174:52"
       }
     ],
-    "src": "33:208:42"
+    "src": "33:208:52"
   },
   "legacyAST": {
-    "absolutePath": "@rarible/royalties/contracts/LibRoyaltiesV2.sol",
-    "exportedSymbols": {
-      "LibRoyaltiesV2": [
-        5477
-      ]
+    "attributes": {
+      "absolutePath": "@rarible/royalties/contracts/LibRoyaltiesV2.sol",
+      "exportedSymbols": {
+        "LibRoyaltiesV2": [
+          6156
+        ]
+      },
+      "license": "MIT"
     },
-    "id": 5478,
-    "license": "MIT",
-    "nodeType": "SourceUnit",
-    "nodes": [
+    "children": [
       {
-        "id": 5473,
-        "literals": [
-          "solidity",
-          ">=",
-          "0.6",
-          ".2",
-          "<",
-          "0.8",
-          ".0"
-        ],
-        "nodeType": "PragmaDirective",
-        "src": "33:31:42"
+        "attributes": {
+          "literals": [
+            "solidity",
+            ">=",
+            "0.6",
+            ".2",
+            "<",
+            "0.8",
+            ".0"
+          ]
+        },
+        "id": 6152,
+        "name": "PragmaDirective",
+        "src": "33:31:52"
       },
       {
-        "abstract": false,
-        "baseContracts": [],
-        "contractDependencies": [],
-        "contractKind": "library",
-        "fullyImplemented": true,
-        "id": 5477,
-        "linearizedBaseContracts": [
-          5477
-        ],
-        "name": "LibRoyaltiesV2",
-        "nodeType": "ContractDefinition",
-        "nodes": [
+        "attributes": {
+          "abstract": false,
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "library",
+          "fullyImplemented": true,
+          "linearizedBaseContracts": [
+            6156
+          ],
+          "name": "LibRoyaltiesV2",
+          "scope": 6157
+        },
+        "children": [
           {
-            "constant": true,
-            "id": 5476,
-            "mutability": "constant",
-            "name": "_INTERFACE_ID_ROYALTIES",
-            "nodeType": "VariableDeclaration",
-            "scope": 5477,
-            "src": "185:52:42",
-            "stateVariable": true,
-            "storageLocation": "default",
-            "typeDescriptions": {
-              "typeIdentifier": "t_bytes4",
-              "typeString": "bytes4"
+            "attributes": {
+              "constant": true,
+              "mutability": "constant",
+              "name": "_INTERFACE_ID_ROYALTIES",
+              "scope": 6156,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "bytes4",
+              "visibility": "internal"
             },
-            "typeName": {
-              "id": 5474,
-              "name": "bytes4",
-              "nodeType": "ElementaryTypeName",
-              "src": "185:6:42",
-              "typeDescriptions": {
-                "typeIdentifier": "t_bytes4",
-                "typeString": "bytes4"
-              }
-            },
-            "value": {
-              "hexValue": "30783434633734626363",
-              "id": 5475,
-              "isConstant": false,
-              "isLValue": false,
-              "isPure": true,
-              "kind": "number",
-              "lValueRequested": false,
-              "nodeType": "Literal",
-              "src": "227:10:42",
-              "typeDescriptions": {
-                "typeIdentifier": "t_rational_1153911756_by_1",
-                "typeString": "int_const 1153911756"
+            "children": [
+              {
+                "attributes": {
+                  "name": "bytes4",
+                  "type": "bytes4"
+                },
+                "id": 6153,
+                "name": "ElementaryTypeName",
+                "src": "185:6:52"
               },
-              "value": "0x44c74bcc"
-            },
-            "visibility": "internal"
+              {
+                "attributes": {
+                  "hexvalue": "30783434633734626363",
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": true,
+                  "lValueRequested": false,
+                  "token": "number",
+                  "type": "int_const 1153911756",
+                  "value": "0x44c74bcc"
+                },
+                "id": 6154,
+                "name": "Literal",
+                "src": "227:10:52"
+              }
+            ],
+            "id": 6155,
+            "name": "VariableDeclaration",
+            "src": "185:52:52"
           }
         ],
-        "scope": 5478,
-        "src": "66:174:42"
+        "id": 6156,
+        "name": "ContractDefinition",
+        "src": "66:174:52"
       }
     ],
-    "src": "33:208:42"
+    "id": 6157,
+    "name": "SourceUnit",
+    "src": "33:208:52"
   },
   "compiler": {
     "name": "solc",
     "version": "0.7.6+commit.7338295f.Emscripten.clang"
   },
   "networks": {},
-  "schemaVersion": "3.3.2",
-  "updatedAt": "2021-05-13T09:50:01.140Z",
+  "schemaVersion": "3.4.1",
+  "updatedAt": "2021-08-19T21:20:35.328Z",
   "devdoc": {
     "kind": "dev",
     "methods": {},

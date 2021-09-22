@@ -4,8 +4,8 @@ pragma solidity >=0.6.2 <0.8.0;
 pragma abicoder v2;
 
 import "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol";
-import "@openzeppelin/contracts-upgradeable/token/ERC721/ERC721BurnableUpgradeable.sol";
 import "./ERC721DefaultApproval.sol";
+import "@openzeppelin/contracts-upgradeable/token/ERC721/ERC721BurnableUpgradeable.sol";
 import "./ERC721Lazy.sol";
 import "../HasContractURI.sol";
 

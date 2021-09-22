@@ -30,27 +30,6 @@ abstract contract ERC1155Lazy is IERC1155LazyMint, ERC1155BaseURI, Mint1155Valid
         _registerInterface(0x6db15a0f);
     }
 
-    function transferFromOrMint(
-        LibERC1155LazyMint.Mint1155Data memory data,
-        address from,
-        address to,
-        uint256 amount
-    ) override external {
-        uint balance = balanceOf(from, data.tokenId);
-        uint left = amount;
-        if (balance != 0) {
-            uint transfer = amount;
-            if (balance < amount) {
-                transfer = balance;
-            }
-            safeTransferFrom(from, to, data.tokenId, transfer, "");
-            left = amount - transfer;
-        }
-        if (left > 0) {
-            mintAndTransfer(data, to, left);
-        }
-    }
-
     function mintAndTransfer(LibERC1155LazyMint.Mint1155Data memory data, address to, uint256 _amount) public override virtual {
         address minter = address(data.tokenId >> 96);
         address sender = _msgSender();
@@ -69,14 +48,12 @@ abstract contract ERC1155Lazy is IERC1155LazyMint, ERC1155BaseURI, Mint1155Valid
             }
 
             _saveSupply(data.tokenId, data.supply);
-            _saveRoyalties(data.tokenId, data.royalties);
+            _saveFees(data.tokenId, data.royalties);
             _saveCreators(data.tokenId, data.creators);
             _setTokenURI(data.tokenId, data.uri);
         }
 
         _mint(to, data.tokenId, _amount, "");
-
-        emit Mint(data.tokenId, data.uri, data.creators, _amount);
     }
 
     function _mint(address account, uint256 id, uint256 amount, bytes memory data) internal virtual override {
@@ -94,7 +71,6 @@ abstract contract ERC1155Lazy is IERC1155LazyMint, ERC1155BaseURI, Mint1155Valid
 
     function _saveCreators(uint tokenId, LibPart.Part[] memory _creators) internal {
         LibPart.Part[] storage creators = creators[tokenId];
-        //todo check sum is 10000
         for(uint i=0; i < _creators.length; i++) {
             creators.push(_creators[i]);
         }

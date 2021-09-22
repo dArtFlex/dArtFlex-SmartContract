@@ -17,13 +17,12 @@ function createNetwork(name) {
 
     return {
       provider: () => createProvider(json.address, json.key, json.url),
-      // from: json.address,
-      // gas: 5000000,
-      // gasPrice: gasPrice + "000000000",
+      from: json.address,
+      gas: 5000000,
+      gasPrice: gasPrice + "000000000",
       network_id: json.network_id,
       skipDryRun: true,
-      networkCheckTimeout: 4000000,
-      timeoutBlocks: 2000,
+      networkCheckTimeout: 500000
     };
   } catch (e) {
     return null;
@@ -62,6 +61,7 @@ module.exports = {
           enabled : true,
           runs: 200
         },
+        evmVersion: "istanbul"
       }
     }
   }

@@ -8,10 +8,10 @@ import "../RoyaltiesV2.sol";
 
 contract RoyaltiesV2Impl is AbstractRoyalties, RoyaltiesV2 {
     function getRoyalties(uint256 id) override external view returns (LibPart.Part[] memory) {
-        return royalties[id];
+        return fees[id];
     }
 
-    function _onRoyaltiesSet(uint256 _id, LibPart.Part[] memory _royalties) override internal {
-        emit RoyaltiesSet(_id, _royalties);
+    function _onRoyaltiesSet(uint256 _id, LibPart.Part[] memory _fees) override internal {
+        emit RoyaltiesSet(_id, _fees);
     }
 }
