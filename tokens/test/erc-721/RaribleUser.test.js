@@ -20,7 +20,6 @@ contract("ERC721RaribleUser", accounts => {
   	assert.equal(await token.supportsInterface("0x01ffc9a7"), true);
   });
 
-	//todo check this id
   it("check for mintAndTransfer interface", async () => {
   	assert.equal(await token.supportsInterface("0x8486f69f"), true);
   });

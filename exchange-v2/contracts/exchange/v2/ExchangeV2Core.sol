@@ -25,7 +25,7 @@ abstract contract ExchangeV2Core is Initializable, OwnableUpgradeable, Reentranc
 
     //events
     event Cancel(bytes32 hash);
-    event Match(bytes32 leftHash, bytes32 rightHash, address indexed leftMaker, address indexed  rightMaker, uint newLeftFill, uint newRightFill);
+    event Match(bytes32 leftHash, bytes32 rightHash, address indexed leftMaker, address indexed rightMaker, uint newLeftFill, uint newRightFill);
 
     function cancel(LibOrder.Order memory order) external nonReentrant{
         require(_msgSender() == order.maker, "not a maker");
@@ -66,7 +66,7 @@ abstract contract ExchangeV2Core is Initializable, OwnableUpgradeable, Reentranc
             if (msg.value > totalMakeValue) {
                 address(msg.sender).transferEth(msg.value.sub(totalMakeValue));
             }
-        } else if (takeMatch.assetClass == LibAsset.ETH_ASSET_CLASS) { //todo могут ли быть с обеих сторон ETH?
+        } else if (takeMatch.assetClass == LibAsset.ETH_ASSET_CLASS) { 
             require(msg.value >= totalTakeValue, "not enough eth");
             if (msg.value > totalTakeValue) {
                 address(msg.sender).transferEth(msg.value.sub(totalTakeValue));

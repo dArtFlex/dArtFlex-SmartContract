@@ -18,7 +18,9 @@ library LibMath {
         uint256 denominator,
         uint256 target
     ) internal pure returns (uint256 partialAmount) {
-        require(!isRoundingErrorFloor(numerator, denominator, target), "rounding error");
+        if (!isRoundingErrorFloor(numerator, denominator, target)) {
+            revert("rounding error");
+        }
 
         partialAmount = numerator.mul(target).div(denominator);
     }
@@ -76,7 +78,9 @@ library LibMath {
         uint256 denominator,
         uint256 target
     ) internal pure returns (uint256 partialAmount) {
-        require(!isRoundingErrorCeil(numerator, denominator, target), "rounding error");
+        if (!isRoundingErrorCeil(numerator, denominator, target)) {
+            revert("rounding error");
+        }
         partialAmount = numerator.mul(target).add(denominator.sub(1)).div(denominator);
     }
 

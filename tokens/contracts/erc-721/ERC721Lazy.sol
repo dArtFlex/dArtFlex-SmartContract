@@ -12,8 +12,13 @@ import "./Mint721Validator.sol";
 
 abstract contract ERC721Lazy is IERC721LazyMint, ERC721Upgradeable, ReentrancyGuardUpgradeable, Mint721Validator, RoyaltiesV2Upgradeable, RoyaltiesV2Impl {
 
-    // tokenId => creators
     mapping(uint256 => LibPart.Part[]) private creators;
+
+    event UpdateAccount(
+        uint256 indexed id,
+        uint256 indexed from,
+        uint256 indexed to,
+    );
 
     function __ERC721Lazy_init_unchained() internal initializer {
         _registerInterface(0x8486f69f);
@@ -46,6 +51,7 @@ abstract contract ERC721Lazy is IERC721LazyMint, ERC721Upgradeable, ReentrancyGu
     function updateAccount(uint256 _id, address _from, address _to) external nonReentrant {
         require(_msgSender() == _from, "not allowed");
         super._updateAccount(_id, _from, _to);
+        emit UpdateAccount(_id, _from, _to);
     }
 
     function getCreators(uint256 _id) external view returns (LibPart.Part[] memory) {
