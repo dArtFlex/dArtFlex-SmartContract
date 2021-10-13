@@ -20,7 +20,7 @@ library LibOrder {
         uint salt;
         uint start;
         uint end;
-        bytes4 dataType;
+        bytes32 dataType;
         bytes data;
     }
 

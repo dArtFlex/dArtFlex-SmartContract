@@ -52,8 +52,6 @@ Logically, whole process can be divided into stages:
 - check if order is signed by its maker or maker of the order is executing the transaction
 - if maker of the order is a contract, then ERC-1271 check is performed
 
-TODO: currently, only off-chain orders are supported, this part of the smart contract ca be easily updated to support on-chain order books.
-
 #### Asset matching
 
 Purpose of this is to validate that **make asset** of the **left** order matches **take asset** from the **right** order and vice versa.
@@ -71,14 +69,7 @@ Order execution is done by TransferManager. There are 2 variants:
 - SimpleTransferManager (it simply transfers assets from maker to taker and vice versa)
 - RaribleTransferManager (sophisticated version, it takes in account protocol commissions, royalties etc)
 
-TODO: There are plans to extend RaribleTransferManager to support more royalty schemes and add new features like custom fees, multiple order beneficiaries.
-
 This part of the algorithm can be extended with custom ITransferExecutor. In future, new executors will be added to support new asset types, for example, executor for handling bundles can be added.
-
-TODO: possible improvements:
-
-- support bundles
-- support random boxes
 
 #### Fees
 
